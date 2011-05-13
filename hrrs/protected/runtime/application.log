@@ -216,3 +216,9 @@ Stack trace:
 #15 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
 #16 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
 #17 {main} REQUEST_URI=/hrrs/hrrs/site/login
+2011/05/13 07:02:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/addjs".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/addjs')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/index.php/user/addjs
