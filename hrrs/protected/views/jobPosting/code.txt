@@ -1,0 +1,1 @@
+<? Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/themes/new/temp/job/style.css');?>

@@ -1,0 +1,18 @@
+<section id="introcol">
+<div class="leftcol">
+
+<h3>What we do ?</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum blandit faucibus. Morbi commodo vestibulum lectus fringilla porttitor. Aenean sodales congue feugiat. </p>
+</div>
+
+<div class="rightcol">
+<h3>Why Choose Us ?</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum blandit faucibus. Morbi commodo vestibulum lectus fringilla porttitor. Aenean sodales congue feugiat. </p>
+</div>
+
+<div class="midcol">
+<h3>Our Process</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum blandit faucibus. Morbi commodo vestibulum lectus fringilla porttitor. Aenean sodales congue feugiat. </p>
+</div>
+<div class="clear"></div>
+</section>
