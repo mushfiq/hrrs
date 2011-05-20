@@ -216,3 +216,494 @@ Stack trace:
 #15 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
 #16 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
 #17 {main} REQUEST_URI=/hrrs/hrrs/site/login
+2011/05/18 14:29:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CController.php(262): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): CController->run('index.php')
+#2 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/index.php/...')
+#3 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/index.php/user/addjs
+2011/05/18 17:57:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CController.php(262): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): CController->run('index.php')
+#2 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/index.php/...')
+#3 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/index.php/user/addjs
+2011/05/18 18:12:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CController.php(262): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): CController->run('index.php')
+#2 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/index.php/...')
+#3 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/index.php/user
+2011/05/18 18:12:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CController.php(262): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): CController->run('index.php')
+#2 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/index.php/...')
+#3 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/index.php/rbam
+2011/05/18 18:31:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "rbam".' in C:\xampp\htdocs\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CController.php(262): CController->missingAction('rbam')
+#1 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): CController->run('rbam')
+#2 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/rbam')
+#3 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/rbam
+2011/05/18 18:31:15 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'hrrs_old.authitem' doesn't exist. The SQL statement executed was: SELECT * FROM AuthItem WHERE name=:name.
+in C:\xampp\htdocs\hrrs\hrrs\protected\modules\rbam\components\RbamInitialiser.php (223)
+in C:\xampp\htdocs\hrrs\hrrs\protected\modules\rbam\controllers\RbamInitialiseController.php (47)
+in C:\xampp\htdocs\hrrs\hrrs\index.php (13)
+2011/05/18 18:31:26 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `hr_users` `t` WHERE status>-1.
+in C:\xampp\htdocs\hrrs\hrrs\protected\modules\user\views\user\index.php (31)
+in C:\xampp\htdocs\hrrs\hrrs\protected\modules\user\controllers\UserController.php (65)
+in C:\xampp\htdocs\hrrs\hrrs\index.php (13)
+2011/05/18 18:31:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `hr_users` `t` WHERE status>-1' in C:\xampp\htdocs\hrrs\framework\db\CDbCommand.php:518
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\db\CDbCommand.php(413): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\hrrs\framework\db\ar\CActiveRecord.php(1510): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\hrrs\framework\web\CActiveDataProvider.php(165): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\hrrs\framework\web\CDataProvider.php(184): CActiveDataProvider->calculateTotalItemCount()
+#4 C:\xampp\htdocs\hrrs\framework\web\CActiveDataProvider.php(126): CDataProvider->getTotalItemCount()
+#5 C:\xampp\htdocs\hrrs\framework\web\CDataProvider.php(128): CActiveDataProvider->fetchData()
+#6 C:\xampp\htdocs\hrrs\framework\zii\widgets\CBaseListView.php(105): CDataProvider->getData()
+#7 C:\xampp\htdocs\hrrs\framework\zii\widgets\grid\CGridView.php(258): CBaseListView->init()
+#8 C:\xampp\htdocs\hrrs\framework\web\CBaseController.php(140): CGridView->init()
+#9 C:\xampp\htdocs\hrrs\framework\web\CBaseController.php(165): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 C:\xampp\htdocs\hrrs\hrrs\protected\modules\user\views\user\index.php(31): CBaseController->widget('zii.widgets.gri...', Array)
+#11 C:\xampp\htdocs\hrrs\framework\web\CBaseController.php(119): require('C:\xampp\htdocs...')
+#12 C:\xampp\htdocs\hrrs\framework\web\CBaseController.php(88): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\hrrs\framework\web\CController.php(866): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\hrrs\framework\web\CController.php(779): CController->renderPartial('index', Array, true)
+#15 C:\xampp\htdocs\hrrs\hrrs\protected\modules\user\controllers\UserController.php(65): CController->render('index', Array)
+#16 C:\xampp\htdocs\hrrs\framework\web\actions\CInlineAction.php(50): UserController->actionIndex()
+#17 C:\xampp\htdocs\hrrs\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\hrrs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\hrrs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\xampp\htdocs\hrrs\framework\web\CController.php(1122): CFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\hrrs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\xampp\htdocs\hrrs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\hrrs\framework\web\CController.php(283): CFilterChain->run()
+#24 C:\xampp\htdocs\hrrs\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): CController->run('')
+#26 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/user')
+#27 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#29 {main} REQUEST_URI=/hrrs/hrrs/user/user
+2011/05/20 10:26:22 [error] [exception.CException] exception 'CException' with message 'Property "Company.com_mail" is not defined.' in C:\xampp\htdocs\hrrs\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\db\ar\CActiveRecord.php(128): CComponent->__get('com_mail')
+#1 C:\xampp\htdocs\hrrs\framework\web\helpers\CHtml.php(1697): CActiveRecord->__get('com_mail')
+#2 C:\xampp\htdocs\hrrs\framework\zii\widgets\CDetailView.php(208): CHtml::value(Object(Company), 'com_mail')
+#3 C:\xampp\htdocs\hrrs\framework\web\CBaseController.php(166): CDetailView->run()
+#4 C:\xampp\htdocs\hrrs\hrrs\protected\views\company\view.php(31): CBaseController->widget('zii.widgets.CDe...', Array)
+#5 C:\xampp\htdocs\hrrs\framework\web\CBaseController.php(119): require('C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\hrrs\framework\web\CBaseController.php(88): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\hrrs\framework\web\CController.php(866): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\hrrs\framework\web\CController.php(779): CController->renderPartial('view', Array, true)
+#9 C:\xampp\htdocs\hrrs\hrrs\protected\controllers\CompanyController.php(85): CController->render('view', Array)
+#10 C:\xampp\htdocs\hrrs\framework\web\actions\CInlineAction.php(50): CompanyController->actionView()
+#11 C:\xampp\htdocs\hrrs\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\hrrs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\hrrs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 C:\xampp\htdocs\hrrs\framework\web\CController.php(1122): CFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\hrrs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#16 C:\xampp\htdocs\hrrs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\hrrs\framework\web\CController.php(283): CFilterChain->run()
+#18 C:\xampp\htdocs\hrrs\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): CController->run('view')
+#20 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('company/view')
+#21 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#23 {main} REQUEST_URI=/hrrs/hrrs/company/10
+2011/05/20 10:39:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\xampp\htdocs\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CController.php(262): CController->missingAction('admin')
+#1 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): CController->run('admin')
+#2 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('company/admin')
+#3 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/company/admin
+2011/05/20 10:40:31 [error] [exception.CException] exception 'CException' with message 'Please specify the "data" property.' in C:\xampp\htdocs\hrrs\framework\zii\widgets\CDetailView.php:135
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CBaseController.php(140): CDetailView->init()
+#1 C:\xampp\htdocs\hrrs\framework\web\CBaseController.php(165): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#2 C:\xampp\htdocs\hrrs\hrrs\protected\views\company\show_details.php(18): CBaseController->widget('zii.widgets.CDe...', Array)
+#3 C:\xampp\htdocs\hrrs\framework\web\CBaseController.php(119): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\hrrs\framework\web\CBaseController.php(88): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\hrrs\framework\web\CController.php(866): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\hrrs\framework\web\CController.php(779): CController->renderPartial('show_details', Array, true)
+#7 C:\xampp\htdocs\hrrs\hrrs\protected\controllers\CompanyController.php(66): CController->render('show_details', Array)
+#8 C:\xampp\htdocs\hrrs\framework\web\actions\CInlineAction.php(50): CompanyController->actionShow_Details()
+#9 C:\xampp\htdocs\hrrs\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\hrrs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\hrrs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 C:\xampp\htdocs\hrrs\framework\web\CController.php(1122): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\hrrs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\hrrs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\hrrs\framework\web\CController.php(283): CFilterChain->run()
+#16 C:\xampp\htdocs\hrrs\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): CController->run('show_details')
+#18 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('company/show_de...')
+#19 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#21 {main} REQUEST_URI=/hrrs/hrrs/company/show_details
+2011/05/20 10:43:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\xampp\htdocs\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CController.php(262): CController->missingAction('admin')
+#1 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): CController->run('admin')
+#2 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('company/admin')
+#3 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/company/admin
+2011/05/20 10:43:32 [error] [exception.CException] exception 'CException' with message 'Property "User.full_name" is not defined.' in C:\xampp\htdocs\hrrs\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\db\ar\CActiveRecord.php(128): CComponent->__get('full_name')
+#1 C:\xampp\htdocs\hrrs\hrrs\protected\views\company\show_details.php(14): CActiveRecord->__get('full_name')
+#2 C:\xampp\htdocs\hrrs\framework\web\CBaseController.php(119): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\hrrs\framework\web\CBaseController.php(88): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\hrrs\framework\web\CController.php(866): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\hrrs\framework\web\CController.php(779): CController->renderPartial('show_details', Array, true)
+#6 C:\xampp\htdocs\hrrs\hrrs\protected\controllers\CompanyController.php(66): CController->render('show_details', Array)
+#7 C:\xampp\htdocs\hrrs\framework\web\actions\CInlineAction.php(50): CompanyController->actionShow_Details()
+#8 C:\xampp\htdocs\hrrs\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\hrrs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\hrrs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\xampp\htdocs\hrrs\framework\web\CController.php(1122): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\hrrs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\hrrs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\hrrs\framework\web\CController.php(283): CFilterChain->run()
+#15 C:\xampp\htdocs\hrrs\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): CController->run('show_details')
+#17 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('company/show_de...')
+#18 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#20 {main} REQUEST_URI=/hrrs/hrrs/company/show_details
+2011/05/20 10:45:06 [error] [exception.CException] exception 'CException' with message 'Please specify the "data" property.' in C:\xampp\htdocs\hrrs\framework\zii\widgets\CDetailView.php:135
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CBaseController.php(140): CDetailView->init()
+#1 C:\xampp\htdocs\hrrs\framework\web\CBaseController.php(165): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#2 C:\xampp\htdocs\hrrs\hrrs\protected\views\company\show_details.php(34): CBaseController->widget('zii.widgets.CDe...', Array)
+#3 C:\xampp\htdocs\hrrs\framework\web\CBaseController.php(119): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\hrrs\framework\web\CBaseController.php(88): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\hrrs\framework\web\CController.php(866): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\hrrs\framework\web\CController.php(779): CController->renderPartial('show_details', Array, true)
+#7 C:\xampp\htdocs\hrrs\hrrs\protected\controllers\CompanyController.php(66): CController->render('show_details', Array)
+#8 C:\xampp\htdocs\hrrs\framework\web\actions\CInlineAction.php(50): CompanyController->actionShow_Details()
+#9 C:\xampp\htdocs\hrrs\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\hrrs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\hrrs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 C:\xampp\htdocs\hrrs\framework\web\CController.php(1122): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\hrrs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\hrrs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\hrrs\framework\web\CController.php(283): CFilterChain->run()
+#16 C:\xampp\htdocs\hrrs\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): CController->run('show_details')
+#18 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('company/show_de...')
+#19 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#21 {main} REQUEST_URI=/hrrs/hrrs/company/show_details
+2011/05/20 10:46:33 [error] [exception.CException] exception 'CException' with message 'Please specify the "data" property.' in C:\xampp\htdocs\hrrs\framework\zii\widgets\CDetailView.php:135
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CBaseController.php(140): CDetailView->init()
+#1 C:\xampp\htdocs\hrrs\framework\web\CBaseController.php(165): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#2 C:\xampp\htdocs\hrrs\hrrs\protected\views\company\show_details.php(34): CBaseController->widget('zii.widgets.CDe...', Array)
+#3 C:\xampp\htdocs\hrrs\framework\web\CBaseController.php(119): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\hrrs\framework\web\CBaseController.php(88): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\hrrs\framework\web\CController.php(866): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\hrrs\framework\web\CController.php(779): CController->renderPartial('show_details', Array, true)
+#7 C:\xampp\htdocs\hrrs\hrrs\protected\controllers\CompanyController.php(66): CController->render('show_details', Array)
+#8 C:\xampp\htdocs\hrrs\framework\web\actions\CInlineAction.php(50): CompanyController->actionShow_Details()
+#9 C:\xampp\htdocs\hrrs\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\hrrs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\hrrs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 C:\xampp\htdocs\hrrs\framework\web\CController.php(1122): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\hrrs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\hrrs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\hrrs\framework\web\CController.php(283): CFilterChain->run()
+#16 C:\xampp\htdocs\hrrs\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): CController->run('show_details')
+#18 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('company/show_de...')
+#19 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#21 {main} REQUEST_URI=/hrrs/hrrs/company/show_details
+2011/05/20 10:52:08 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'hrrs.company' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `company`.
+in C:\xampp\htdocs\hrrs\hrrs\index.php (13)
+2011/05/20 11:04:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/5b01544e/js/form.js".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('assets/5b01544e...')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/assets/5b01544e/js/form.js
+2011/05/20 11:05:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/5b01544e/js/form.js".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('assets/5b01544e...')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/assets/5b01544e/js/form.js
+2011/05/20 11:05:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/5b01544e/js/form.js".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('assets/5b01544e...')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/assets/5b01544e/js/form.js
+2011/05/20 11:07:05 [error] [php] mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() (C:\xampp\htdocs\hrrs\hrrs\protected\modules\user\UserModule.php:210)
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\actions\CInlineAction.php(50): RegistrationController->actionRegistration()
+#1 C:\xampp\htdocs\hrrs\framework\web\CController.php(300): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\hrrs\framework\web\CController.php(278): RegistrationController->runAction()
+#3 C:\xampp\htdocs\hrrs\framework\web\CController.php(257): RegistrationController->runActionWithFilters()
+#4 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): RegistrationController->run()
+#5 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController()
+#6 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CWebApplication->run()
+REQUEST_URI=/hrrs/hrrs/user/registration
+in C:\xampp\htdocs\hrrs\hrrs\protected\modules\user\UserModule.php (210)
+in C:\xampp\htdocs\hrrs\hrrs\protected\modules\user\controllers\RegistrationController.php (58)
+in C:\xampp\htdocs\hrrs\hrrs\index.php (13)
+2011/05/20 11:12:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "useradmin".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('useradmin')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/useradmin
+2011/05/20 11:24:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "userlogin".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('userlogin')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/userlogin
+2011/05/20 11:24:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Array".' in C:\xampp\htdocs\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CController.php(262): CController->missingAction('Array')
+#1 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): CController->run('Array')
+#2 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/login/Arra...')
+#3 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/user/login/Array
+2011/05/20 11:25:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/hhj/jjj".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/hhj/jjj')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/user/hhj/jjj
+2011/05/20 11:43:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('admin')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/admin
+2011/05/20 11:43:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/user/login".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('admin/user/logi...')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/admin/user/login
+2011/05/20 11:43:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/user/login".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('admin/user/logi...')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/admin/user/login
+2011/05/20 11:43:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/user/login".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('admin/user/logi...')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/admin/user/login
+2011/05/20 12:06:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('admin')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/admin
+2011/05/20 12:06:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('admin')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/admin
+2011/05/20 12:06:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('admin')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/admin
+2011/05/20 12:07:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('admin')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/admin
+2011/05/20 12:07:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('admin')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/admin
+2011/05/20 12:07:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('admin')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/admin
+2011/05/20 12:07:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in C:\xampp\htdocs\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CController.php(262): CController->missingAction('upload')
+#1 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): CController->run('upload')
+#2 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/upload')
+#3 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/upload
+2011/05/20 12:08:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gallery".' in C:\xampp\htdocs\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CController.php(262): CController->missingAction('gallery')
+#1 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): CController->run('gallery')
+#2 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/gallery')
+#3 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/gallery
+2011/05/20 12:08:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "stat".' in C:\xampp\htdocs\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CController.php(262): CController->missingAction('stat')
+#1 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): CController->run('stat')
+#2 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/stat')
+#3 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/stat
+2011/05/20 12:08:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "tinymce".' in C:\xampp\htdocs\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CController.php(262): CController->missingAction('tinymce')
+#1 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): CController->run('tinymce')
+#2 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/tinymce')
+#3 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/tinymce
+2011/05/20 12:14:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "userlogin".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('userlogin')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/userlogin
+2011/05/20 12:14:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "userlogin".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('userlogin')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/userlogin
+2011/05/20 12:15:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hrrs/hrrs/user/company/home".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('hrrs/hrrs/user/...')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs//hrrs/hrrs/user/company/home
+2011/05/20 12:15:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hrrs/hrrs/themes/adminus/images/closelabel.gif".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('hrrs/hrrs/theme...')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs//hrrs/hrrs/themes/adminus/images/closelabel.gif
+2011/05/20 12:15:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hrrs/hrrs/themes/adminus/images/loading.gif".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('hrrs/hrrs/theme...')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs//hrrs/hrrs/themes/adminus/images/loading.gif
+2011/05/20 12:16:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hrrs/hrrs/user/company/home".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('hrrs/hrrs/user/...')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs//hrrs/hrrs/user/company/home
+2011/05/20 12:16:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hrrs/hrrs/themes/adminus/images/closelabel.gif".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('hrrs/hrrs/theme...')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs//hrrs/hrrs/themes/adminus/images/closelabel.gif
+2011/05/20 12:16:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hrrs/hrrs/themes/adminus/images/loading.gif".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('hrrs/hrrs/theme...')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs//hrrs/hrrs/themes/adminus/images/loading.gif
+2011/05/20 12:17:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/company/home".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/company/ho...')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/user/company/home
+2011/05/20 12:17:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hrrs/hrrs/user/company/home".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('hrrs/hrrs/user/...')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs//hrrs/hrrs/user/company/home
+2011/05/20 12:17:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hrrs/hrrs/themes/adminus/images/closelabel.gif".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('hrrs/hrrs/theme...')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs//hrrs/hrrs/themes/adminus/images/closelabel.gif
+2011/05/20 12:17:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hrrs/hrrs/themes/adminus/images/loading.gif".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('hrrs/hrrs/theme...')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs//hrrs/hrrs/themes/adminus/images/loading.gif
+2011/05/20 13:42:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hrrs".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('hrrs')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs//hrrs/
+2011/05/20 13:42:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hrrs/user/login".' in C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('hrrs/user/login')
+#1 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs//hrrs/user/login
+2011/05/20 13:42:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "home".' in C:\xampp\htdocs\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CController.php(262): CController->missingAction('home')
+#1 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): CController->run('home')
+#2 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('company/home')
+#3 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/company/home
+2011/05/20 13:44:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "home".' in C:\xampp\htdocs\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CController.php(262): CController->missingAction('home')
+#1 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): CController->run('home')
+#2 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('company/home')
+#3 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/company/home
+2011/05/20 13:45:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "home".' in C:\xampp\htdocs\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CController.php(262): CController->missingAction('home')
+#1 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): CController->run('home')
+#2 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('company/home')
+#3 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/company/home
+2011/05/20 14:38:44 [error] [php] mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() (C:\xampp\htdocs\hrrs\hrrs\protected\modules\user\UserModule.php:210)
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\actions\CInlineAction.php(50): RegistrationController->actionRegistration()
+#1 C:\xampp\htdocs\hrrs\framework\web\CController.php(300): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\hrrs\framework\web\CController.php(278): RegistrationController->runAction()
+#3 C:\xampp\htdocs\hrrs\framework\web\CController.php(257): RegistrationController->runActionWithFilters()
+#4 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): RegistrationController->run()
+#5 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController()
+#6 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CWebApplication->run()
+REQUEST_URI=/hrrs/hrrs/user/registration
+in C:\xampp\htdocs\hrrs\hrrs\protected\modules\user\UserModule.php (210)
+in C:\xampp\htdocs\hrrs\hrrs\protected\modules\user\controllers\RegistrationController.php (59)
+in C:\xampp\htdocs\hrrs\hrrs\index.php (13)

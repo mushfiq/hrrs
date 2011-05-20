@@ -49,6 +49,7 @@ class RegistrationController extends Controller
 						$model->lastvisit=((Yii::app()->controller->module->loginNotActiv||(Yii::app()->controller->module->activeAfterRegister&&Yii::app()->controller->module->sendActivationMail==false))&&Yii::app()->controller->module->autoLogin)?time():0;
 						$model->superuser=0;
 						$model->status=((Yii::app()->controller->module->activeAfterRegister)?User::STATUS_ACTIVE:User::STATUS_NOACTIVE);
+                  $model->usertype = $_POST['usertype'];
 						
 						if ($model->save()) {
 							$profile->user_id=$model->id;
@@ -81,4 +82,15 @@ class RegistrationController extends Controller
 			    $this->render('/user/registration',array('model'=>$model,'profile'=>$profile));
 		    }
 	}
+      
+   private function checkUserType() {
+		$user = User::model()->notsafe()->findByPk(Yii::app()->user->id);
+		if($user->usertype=='company')
+         return $this->createUrl('/company/create');
+      elseif($user->usertype=='applicant')
+         return $this->createUrl('/applicant/create');
+      else
+         return '';//$this->createUrl('/company/home');
+   }
+   
 }

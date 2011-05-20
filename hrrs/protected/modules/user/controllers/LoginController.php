@@ -26,8 +26,11 @@ class LoginController extends Controller
 			}
 			// display the login form
 			$this->render('/user/login',array('model'=>$model));
-		} else
-			$this->redirect(Yii::app()->controller->module->returnUrl);
+		} else{
+         //$this->checkUserType();
+         $this->redirect($this->checkUserType());
+			//$this->redirect(Yii::app()->controller->module->returnUrl);
+      }   
 	}
 	
 	private function lastViset() {
@@ -35,5 +38,17 @@ class LoginController extends Controller
 		$lastVisit->lastvisit = time();
 		$lastVisit->save();
 	}
+   
+   private function checkUserType() {
+		$user = User::model()->notsafe()->findByPk(Yii::app()->user->id);
+		if($user->usertype=='company')
+         return $this->createUrl('/company/home');
+      elseif($user->usertype=='applicant')
+         return $this->createUrl('/company/home');
+      else
+         return $this->createUrl('/company/home');
+                
+		//$lastVisit->save();
+   }
 
 }
