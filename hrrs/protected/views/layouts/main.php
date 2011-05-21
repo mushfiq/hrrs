@@ -1,105 +1,90 @@
-Copyright © by My Company.
-All Rights Reserved.<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-       <meta name="language" content="en" />
-<!-- blueprint CSS framework -->
-        <!-- tagging off additional css
-	
-	<link rel="stylesheet" type="text/css" href="<?php //echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
-	<link rel="stylesheet" type="text/css" href="<?php //echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
-	<!--[if lt IE 8]>
-	<link rel="stylesheet" type="text/css" href="<?php // echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
-	<![endif]-->
-	<!--<link rel="stylesheet" type="text/css" href="<?php //echo Yii::app()->request->baseUrl; ?>/css/main.css" /> -->
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/themes/new/temp/job/style.css" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta name="language" content="en" />
 
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
+   <!-- blueprint CSS framework -->
+   <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->themerequest->baseUrl; ?>/themes/new/css/date_input.css"/>
+   <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/facebox.css"/>
+   
+   <!--[if lt IE 8]>
+   <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/ie.css" media="screen, projection" />
+   <![endif]-->
 
-	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+   <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/jquery.wysiwyg.css" />
+   <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/themes/new/css/style.css" />
+   <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/visualize.css" />
+
+   <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
- <body>
+
+<body>
+<div id="hld">
+   
+      <div class="wrapper">      <!-- wrapper begins -->
+         <div id="header">
+            <div class="hdrl"></div>
+            <div class="hdrr"></div>
+            
+            <h1><a href="#"><?php echo CHtml::encode(Yii::app()->name); ?></a></h1>
+
+            <div id="mainmenu">
+               <?php $this->widget('zii.widgets.CMenu',array(
+                  'id' => 'nav',
+                  'items'=>array(
+                     array('label'=>'Home', 'url'=>array('/site/index')),
+                     array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
+                     array('label'=>'Contact', 'url'=>array('/site/contact')),
+                     array('label'=>'Demonstrations', 'items'=>array(
+                                                                        array('label' => 'Upload File', 'url' => array('/site/upload')),
+                                                                        array('label' => 'Image gallery', 'url' => array('/site/gallery')),
+                                                                        array('label' => 'Site statistics', 'url' => array('/site/stat')),
+                                                                        array('label' => 'TinyMCE', 'url' => array('/site/tinymce')),
+                                                                     ) ),
+                     array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+                     array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
+                     array('label'=>'Register', 'url'=>array('/site/register'), 'visible'=>Yii::app()->user->isGuest),
+                  ),
+               )); ?>
+            </div><!-- mainmenu -->
+          </div>
+   
+   <?php if(isset($this->breadcrumbs)):?>
+      <?php $this->widget('zii.widgets.CBreadcrumbs', array(
+         'links'=>$this->breadcrumbs,
+         'tagName'=>'p',
+      )); ?><!-- breadcrumbs -->
+   <?php endif?>
+
+   <?php echo $content; ?>
+
+   <div id="footer">
+      Copyright &copy; <?php echo date('Y'); ?> Evoknow Inc.<br/>
+   </div><!-- footer -->
+
+   </div>                  <!-- wrapper ends -->
+   
+</div>      <!-- #hld ends -->
+
+<!--[if IE]><?php Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl.'/js/excanvas.js'); ?><![endif]-->   
+<?php //Yii::app()->clientScript->registerCoreScript('jquery'); ?>
+<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl.'/js/jquery.js'); ?>
+<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl.'/js/jquery.img.preload.js'); ?>
+<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl.'/js/jquery.filestyle.mini.js'); ?>
+<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl.'/js/jquery.wysiwyg.js'); ?>
+<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl.'/js/jquery.date_input.pack.js'); ?>
+<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl.'/js/facebox.js'); ?>
+<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl.'/js/jquery.visualize.js'); ?>
+<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl.'/js/jquery.visualize.tooltip.js'); ?>
+<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl.'/js/jquery.select_skin.js'); ?>
+<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl.'/js/jquery.tablesorter.min.js'); ?>
+<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl.'/js/ajaxupload.js'); ?>
+<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl.'/js/jquery.pngfix.js'); ?>
+<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl.'/js/custom.js'); ?>
 
 
 
-<!-- Custom theme start-->
-
-     <div id="wrap">
-
-<nav id="mainnav">
-
-<h1 id="textlogo">
-HRRS<span></span>
-</h1>
-<li class="active">
-    <?php $this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
-	            array('label'=>'Find Jobs', 'url'=>array('/jobposting/joblist')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Login', 'url'=>array('/user/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/user/logout'), 'visible'=>!Yii::app()->user->isGuest),
-				array('label'=>'Sign Up', 'url'=>array('/user/registration'), 'visible'=>Yii::app()->user->isGuest),
-				                         ),
-		)); ?>
-
-	
-
-
-</li>
-</nav>
-
-<section id="content">
-<header id="homeheader">
-<h2>
-
-<span>Efficient,effective & versatile</span>
-We are bringing new era in human resource recruitement system.Providing thousands of jobs for the potential job seekers.Automatic CV sorting,profile managment is our power.
-</h2> <!-- width="255" height="218" -->
-<img src="<?php echo Yii::app()->request->baseUrl; ?>/themes/new/temp/job/images/f.jpg" width="320" height="240"  alt="header image" class="headerimg"> </header>
-<section id="page">
-<header class="mainheading">
-<h2 class="introhead">HRRS ultimate Solution for Online based Recruitment.</h2>
-</header>
-
-<section id="fourcols">
-
-<div class="clear"></div>
-
-</section>
-</section>
-</section>
-</div>
-
-
-<!-- custom theme end -->
-
-
-<div class="container" id="page">
-
-	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-	</div><!-- header -->
-
-	
-	<?php $this->widget('zii.widgets.CBreadcrumbs', array(
-		'links'=>$this->breadcrumbs,
-	)); ?><!-- breadcrumbs -->
-
-	<?php echo $content; ?>
-<footer>
-	
-        <div id="bottom">
-<a href="#">Home</a> | <a href="#">Find Jobs</a> | <a href="#">Company Registration</a> |<a href="#">Contact Us</a> | <a href="#">Our Services</a> | <a href="#">Login</a>
-<div class="clear"></div>
-</div> 
-</div>
-<div id="credits">
-2010 &copy; All Rights Reserved.  <a href="http://hrrs.com" title="HRRS">Web Application </a> by HRRS </div>
-</footer>
-</footer>
-</div><!-- page -->
 
 </body>
 </html>
