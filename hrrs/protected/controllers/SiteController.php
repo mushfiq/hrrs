@@ -148,5 +148,21 @@ class SiteController extends Controller
 	{
 		$this->render('admin');
 	}
+         public function actionUpload()
+   {
+	    $model=new UploadForm;
+        if(isset($_POST['UploadForm']))
+        {
+            $model->attributes=$_POST['UploadForm'];
+            $model->uploadFile=CUploadedFile::getInstance($model,'UploadForm');
+            if($model->save())
+            {
+                $model->uploadFile->saveAs('path/to/localFile');
+                // redirect to success page
+            }
+        }
+        $this->render('upload', array('model'=>$model));
+	  
+   }
 
 }
