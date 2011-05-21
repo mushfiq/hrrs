@@ -471,3 +471,21 @@ Stack trace:
 #1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
 #2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
 #3 {main} REQUEST_URI=/hrrs/hrrs/themes/new/temp/job/images/f.jpg
+2011/05/21 19:23:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/new/temp/job/style.css".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/new/temp...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/new/temp/job/style.css
+2011/05/21 19:23:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/new/temp/job/images/f.jpg".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/new/temp...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/new/temp/job/images/f.jpg
+2011/05/21 19:23:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/new/temp/job/images/f.jpg".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/new/temp...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/new/temp/job/images/f.jpg
