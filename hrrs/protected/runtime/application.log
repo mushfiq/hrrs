@@ -222,3 +222,207 @@ Stack trace:
 #1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
 #2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
 #3 {main} REQUEST_URI=/hrrs/hrrs/index.php/user/addjs
+2011/05/20 12:45:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/new/temp/job/style.css".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/new/temp...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/new/temp/job/style.css
+2011/05/20 12:45:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/new/temp/job/images/f.jpg".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/new/temp...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/new/temp/job/images/f.jpg
+2011/05/21 18:27:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/new/temp/job/style.css".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/new/temp...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/new/temp/job/style.css
+2011/05/21 18:27:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/new/temp/job/images/f.jpg".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/new/temp...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/new/temp/job/images/f.jpg
+2011/05/21 18:27:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/new/temp/job/style.css".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/new/temp...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/new/temp/job/style.css
+2011/05/21 18:27:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/new/temp/job/images/f.jpg".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/new/temp...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/new/temp/job/images/f.jpg
+2011/05/21 18:32:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/new/temp/job/style.css".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/new/temp...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/new/temp/job/style.css
+2011/05/21 18:32:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/new/temp/job/images/f.jpg".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/new/temp...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/new/temp/job/images/f.jpg
+2011/05/21 18:32:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/new/temp/job/style.css".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/new/temp...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/new/temp/job/style.css
+2011/05/21 18:32:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/new/temp/job/images/f.jpg".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/new/temp...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/new/temp/job/images/f.jpg
+2011/05/21 18:32:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/new/temp/job/style.css".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/new/temp...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/new/temp/job/style.css
+2011/05/21 18:32:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/new/temp/job/images/f.jpg".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/new/temp...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/new/temp/job/images/f.jpg
+2011/05/21 18:32:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('upload')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('upload')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/upload')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/upload
+2011/05/21 18:32:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('register')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('register')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/register')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/register
+2011/05/21 18:32:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "stat".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('stat')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('stat')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/stat')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/stat
+2011/05/21 18:41:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('upload')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('upload')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/upload')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/upload
+2011/05/21 18:44:21 [error] [php] include(UploadForm.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\hrrs\framework\YiiBase.php:396)
+Stack trace:
+#0 C:\wamp\www\hrrs\hrrs\protected\controllers\SiteController.php(130): spl_autoload_call()
+#1 C:\wamp\www\hrrs\framework\web\actions\CInlineAction.php(50): SiteController->actionUpload()
+#2 C:\wamp\www\hrrs\framework\web\CController.php(300): CInlineAction->runWithParams()
+#3 C:\wamp\www\hrrs\framework\web\CController.php(278): SiteController->runAction()
+#4 C:\wamp\www\hrrs\framework\web\CController.php(257): SiteController->runActionWithFilters()
+#5 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): SiteController->run()
+#6 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController()
+#7 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#8 C:\wamp\www\hrrs\hrrs\index.php(13): CWebApplication->run()
+REQUEST_URI=/hrrs/hrrs/site/upload
+in C:\wamp\www\hrrs\hrrs\protected\controllers\SiteController.php (130)
+in C:\wamp\www\hrrs\hrrs\index.php (13)
+2011/05/21 18:45:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('css')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('css')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/css/wysiwy...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/css/wysiwyg.css
+2011/05/21 18:46:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "stat".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('stat')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('stat')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/stat')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/stat
+2011/05/21 18:46:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('css')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('css')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/css/wysiwy...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/css/wysiwyg.css
+2011/05/21 18:46:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gallery".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('gallery')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('gallery')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/gallery')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/gallery
+2011/05/21 18:46:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "tinymce".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('tinymce')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('tinymce')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/tinymce')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/tinymce
+2011/05/21 18:48:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('register')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('register')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/register')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/register
+2011/05/21 18:48:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('css')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('css')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/css/wysiwy...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/css/wysiwyg.css
+2011/05/21 18:48:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gallery".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('gallery')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('gallery')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/gallery')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/gallery
+2011/05/21 19:00:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('register')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('register')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/register')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/register
+2011/05/21 19:02:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('register')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('register')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/register')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/register
+2011/05/21 19:04:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/addjs".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/addjs')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/user/addjs
