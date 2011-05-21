@@ -52,10 +52,12 @@ class JobPosting extends CActiveRecord
 		//{
 			if($this->isNewRecord)
 			{
-				$sql="insert into job_posting2 (id) values('$this->id')";
+                $tablename = Yii::app()->db->tablePrefix.'job_posting2';
+				$sql="insert into $tablename (id) values('$this->id')";
 				$connection=Yii::app()->db; 
 				$command=$connection->createCommand($sql);
-				$command->execute(); 				
+				$command->execute(); 	
+                			
 			}
 			return true;
 		//}

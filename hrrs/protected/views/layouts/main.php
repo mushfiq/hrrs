@@ -38,9 +38,9 @@ HRRS<span></span>
 				array('label'=>'Home', 'url'=>array('/site/index')),
 	            array('label'=>'Find Jobs', 'url'=>array('/jobposting/joblist')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
-				array('label'=>'Sign Up', 'url'=>array('/site/signup'), 'visible'=>Yii::app()->user->isGuest),
+				array('label'=>'Login', 'url'=>array('/user/login'), 'visible'=>Yii::app()->user->isGuest),
+				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/user/logout'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Sign Up', 'url'=>array('/user/registration'), 'visible'=>Yii::app()->user->isGuest),
 				                         ),
 		)); ?>
 

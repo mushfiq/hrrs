@@ -34,7 +34,7 @@ class RegistrationController extends Controller
 			}
 			
 		    if (Yii::app()->user->id) {
-		    	$this->redirect(Yii::app()->controller->module->profileUrl);
+		    	$this->redirect(Yii::app()->controller->module->profileUrl);         
 		    } else {
 		    	if(isset($_POST['RegistrationForm'])) {
 					$model->attributes=$_POST['RegistrationForm'];
@@ -63,7 +63,9 @@ class RegistrationController extends Controller
 									$identity=new UserIdentity($model->username,$soucePassword);
 									$identity->authenticate();
 									Yii::app()->user->login($identity,0);
-									$this->redirect(Yii::app()->controller->module->returnUrl);
+									//$this->redirect(Yii::app()->controller->module->returnUrl);
+                           //for redirectring create page
+                           $this->redirect($this->createPage($_POST['usertype']));   
 							} else {
 								if (!Yii::app()->controller->module->activeAfterRegister&&!Yii::app()->controller->module->sendActivationMail) {
 									Yii::app()->user->setFlash('registration',UserModule::t("Thank you for your registration. Contact Admin to activate your account."));
@@ -83,11 +85,10 @@ class RegistrationController extends Controller
 		    }
 	}
       
-   private function checkUserType() {
-		$user = User::model()->notsafe()->findByPk(Yii::app()->user->id);
-		if($user->usertype=='company')
+   private function createPage($usertype) {
+		if($usertype=='company')
          return $this->createUrl('/company/create');
-      elseif($user->usertype=='applicant')
+      elseif($usertype=='applicant')
          return $this->createUrl('/applicant/create');
       else
          return '';//$this->createUrl('/company/home');
