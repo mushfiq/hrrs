@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'new',
+	'name'=>'Human Resource Recruitment System',
    'theme'=>'new',
 	// preloading 'log' component
 	'preload'=>array('log'),

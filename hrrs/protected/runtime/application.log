@@ -913,3 +913,130 @@ Stack trace:
 #20 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
 #21 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
 #22 {main} REQUEST_URI=/hrrs/hrrs/
+2011/05/21 20:16:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('register')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('register')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/register')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/register
+2011/05/21 20:20:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('register')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('register')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/register')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/register
+2011/05/21 20:22:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('register')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('register')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/register')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/register
+2011/05/21 20:24:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('register')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('register')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/register')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/register
+2011/05/21 20:29:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/addjs".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/addjs')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/user/addjs
+2011/05/21 20:29:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/addcompany".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/addcompany')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/user/addcompany
+2011/05/21 20:42:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "addjs".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('addjs')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('addjs')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/addjs')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/addjs
+2011/05/21 20:42:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/addcompany".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/addcompany')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/user/addcompany
+2011/05/21 20:55:37 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'hrrs.hr_job_posting1' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `hr_job_posting1`.
+in C:\wamp\www\hrrs\hrrs\protected\controllers\JobPostingController.php (130)
+in C:\wamp\www\hrrs\hrrs\index.php (13)
+2011/05/21 20:55:37 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{job_posting1}}" for active record class "JobPosting" cannot be found in the database.' in C:\wamp\www\hrrs\framework\db\ar\CActiveRecord.php:2237
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\db\ar\CActiveRecord.php(371): CActiveRecordMetaData->__construct(Object(JobPosting))
+#1 C:\wamp\www\hrrs\framework\db\ar\CActiveRecord.php(386): CActiveRecord::model('JobPosting')
+#2 C:\wamp\www\hrrs\framework\db\ar\CActiveRecord.php(62): CActiveRecord->getMetaData()
+#3 C:\wamp\www\hrrs\hrrs\protected\controllers\JobPostingController.php(130): CActiveRecord->__construct('search')
+#4 C:\wamp\www\hrrs\framework\web\actions\CInlineAction.php(50): JobPostingController->actionJobList()
+#5 C:\wamp\www\hrrs\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\hrrs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\wamp\www\hrrs\framework\web\CController.php(1122): CFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\hrrs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\hrrs\framework\web\CController.php(283): CFilterChain->run()
+#12 C:\wamp\www\hrrs\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('joblist')
+#14 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('JobPosting/jobl...')
+#15 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#16 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#17 {main} REQUEST_URI=/hrrs/hrrs/JobPosting/joblist
+2011/05/21 20:55:59 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'hrrs.hr_job_posting1' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `hr_job_posting1`.
+in C:\wamp\www\hrrs\hrrs\protected\controllers\JobPostingController.php (130)
+in C:\wamp\www\hrrs\hrrs\index.php (13)
+2011/05/21 20:55:59 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{job_posting1}}" for active record class "JobPosting" cannot be found in the database.' in C:\wamp\www\hrrs\framework\db\ar\CActiveRecord.php:2237
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\db\ar\CActiveRecord.php(371): CActiveRecordMetaData->__construct(Object(JobPosting))
+#1 C:\wamp\www\hrrs\framework\db\ar\CActiveRecord.php(386): CActiveRecord::model('JobPosting')
+#2 C:\wamp\www\hrrs\framework\db\ar\CActiveRecord.php(62): CActiveRecord->getMetaData()
+#3 C:\wamp\www\hrrs\hrrs\protected\controllers\JobPostingController.php(130): CActiveRecord->__construct('search')
+#4 C:\wamp\www\hrrs\framework\web\actions\CInlineAction.php(50): JobPostingController->actionJobList()
+#5 C:\wamp\www\hrrs\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\hrrs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\wamp\www\hrrs\framework\web\CController.php(1122): CFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\hrrs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\hrrs\framework\web\CController.php(283): CFilterChain->run()
+#12 C:\wamp\www\hrrs\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('joblist')
+#14 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('JobPosting/jobl...')
+#15 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#16 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#17 {main} REQUEST_URI=/hrrs/hrrs/index.php/JobPosting/joblist
+2011/05/21 20:56:05 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'hrrs.hr_job_posting1' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `hr_job_posting1`.
+in C:\wamp\www\hrrs\hrrs\protected\controllers\JobPostingController.php (130)
+in C:\wamp\www\hrrs\hrrs\index.php (13)
+2011/05/21 20:56:05 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{job_posting1}}" for active record class "JobPosting" cannot be found in the database.' in C:\wamp\www\hrrs\framework\db\ar\CActiveRecord.php:2237
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\db\ar\CActiveRecord.php(371): CActiveRecordMetaData->__construct(Object(JobPosting))
+#1 C:\wamp\www\hrrs\framework\db\ar\CActiveRecord.php(386): CActiveRecord::model('JobPosting')
+#2 C:\wamp\www\hrrs\framework\db\ar\CActiveRecord.php(62): CActiveRecord->getMetaData()
+#3 C:\wamp\www\hrrs\hrrs\protected\controllers\JobPostingController.php(130): CActiveRecord->__construct('search')
+#4 C:\wamp\www\hrrs\framework\web\actions\CInlineAction.php(50): JobPostingController->actionJobList()
+#5 C:\wamp\www\hrrs\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\hrrs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\wamp\www\hrrs\framework\web\CController.php(1122): CFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\hrrs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\hrrs\framework\web\CController.php(283): CFilterChain->run()
+#12 C:\wamp\www\hrrs\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('joblist')
+#14 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('JobPosting/jobl...')
+#15 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#16 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#17 {main} REQUEST_URI=/hrrs/hrrs/JobPosting/joblist
