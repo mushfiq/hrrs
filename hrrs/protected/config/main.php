@@ -22,7 +22,7 @@ return array(
 
 
 	  //adding new theme
-    'theme'=>'new',
+    //'theme'=>'adminus',
 	
 	'modules'=>array(
 		'gii'=>array(
@@ -58,7 +58,7 @@ return array(
 		),
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=hrrs_old',
+			'connectionString' => 'mysql:host=localhost;dbname=hrrs',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',

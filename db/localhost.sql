@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 3.2.0.1
+-- version 3.1.3.1
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 13, 2011 at 06:53 AM
--- Server version: 5.1.36
--- PHP Version: 5.3.0
+-- Generation Time: May 18, 2011 at 06:37 PM
+-- Server version: 5.1.33
+-- PHP Version: 5.2.9
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
@@ -16,10 +16,78 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `hrrs_old`
+-- Database: `hrrs`
 --
-CREATE DATABASE `hrrs_old` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `hrrs_old`;
+CREATE DATABASE `hrrs` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `hrrs`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `authassignment`
+--
+
+CREATE TABLE IF NOT EXISTS `authassignment` (
+  `itemname` varchar(64) NOT NULL,
+  `userid` varchar(64) NOT NULL,
+  `bizrule` text,
+  `data` text,
+  PRIMARY KEY (`itemname`,`userid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `authassignment`
+--
+
+INSERT INTO `authassignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES
+('RBAC Manager', '1', NULL, 'N;');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `authitem`
+--
+
+CREATE TABLE IF NOT EXISTS `authitem` (
+  `name` varchar(64) NOT NULL,
+  `type` int(11) NOT NULL,
+  `description` text,
+  `bizrule` text,
+  `data` text,
+  PRIMARY KEY (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `authitem`
+--
+
+INSERT INTO `authitem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES
+('Auth Assignments Manager', 2, 'Manages Role Assignments. RBAM required role.', NULL, 'N;'),
+('Auth Items Manager', 2, 'Manages Auth Items. RBAM required role.', NULL, 'N;'),
+('Authenticated', 2, 'Default role for users that are logged in. RBAC default role.', 'return !Yii::app()->getUser()->getIsGuest();', 'N;'),
+('Guest', 2, 'Default role for users that are not logged in. RBAC default role.', 'return Yii::app()->getUser()->getIsGuest();', 'N;'),
+('RBAC Manager', 2, 'Manages Auth Items and Role Assignments. RBAM required role.', NULL, 'N;');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `authitemchild`
+--
+
+CREATE TABLE IF NOT EXISTS `authitemchild` (
+  `parent` varchar(64) NOT NULL,
+  `child` varchar(64) NOT NULL,
+  PRIMARY KEY (`parent`,`child`),
+  KEY `child` (`child`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `authitemchild`
+--
+
+INSERT INTO `authitemchild` (`parent`, `child`) VALUES
+('RBAC Manager', 'Auth Assignments Manager'),
+('RBAC Manager', 'Auth Items Manager');
 
 -- --------------------------------------------------------
 
@@ -78,7 +146,7 @@ CREATE TABLE IF NOT EXISTS `hr_company` (
   `create_time` int(11) DEFAULT NULL,
   `com_user_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`com_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=41 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=40 ;
 
 --
 -- Dumping data for table `hr_company`
@@ -123,8 +191,7 @@ INSERT INTO `hr_company` (`com_id`, `com_type`, `com_info`, `com_address`, `com_
 (36, 'test com', 'dsfsdf\r\nsdfg\r\nsd\r\nsd\r\ngsdf', 'sdfsdg\r\nsdfgsdg\r\nsd\r\ngs\r\ng\r\nsf', 'dfgfgdf', 'ggg', 0x676767, NULL, 119),
 (37, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 120),
 (38, 'aswdf', 'aewdf', 'adss', '', '', '', NULL, 124),
-(39, 'sadfsg', 'hsghd', '', '', '', '', NULL, 126),
-(40, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 127);
+(39, 'sadfsg', 'hsghd', '', '', '', '', NULL, 126);
 
 -- --------------------------------------------------------
 
@@ -147,33 +214,6 @@ INSERT INTO `hr_country` (`id`, `code`, `name`) VALUES
 (1, 88, 'Bangladesh'),
 (2, 78, 'India'),
 (3, 45, 'China');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `hr_experience`
---
-
-CREATE TABLE IF NOT EXISTS `hr_experience` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `js_id` int(11) NOT NULL DEFAULT '0',
-  `position` varchar(100) NOT NULL,
-  `organization` varchar(100) NOT NULL,
-  `start_date` date DEFAULT NULL,
-  `end_date` date DEFAULT NULL,
-  `responsibility` text,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
-
---
--- Dumping data for table `hr_experience`
---
-
-INSERT INTO `hr_experience` (`id`, `js_id`, `position`, `organization`, `start_date`, `end_date`, `responsibility`) VALUES
-(1, 109, 'sdafsdfasdfa', 'adf', '0000-00-00', '0000-00-00', ''),
-(2, 109, 'asds', 'sdasd', '0000-00-00', '0000-00-00', ''),
-(3, 109, 'adsf', 'adfd', '0000-00-00', '0000-00-00', ''),
-(4, 109, 'dadsf', 'adsf', '0000-00-00', '0000-00-00', '');
 
 -- --------------------------------------------------------
 
@@ -332,6 +372,33 @@ CREATE TABLE IF NOT EXISTS `hr_js_education` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `hr_js_experience`
+--
+
+CREATE TABLE IF NOT EXISTS `hr_js_experience` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `js_id` int(11) NOT NULL DEFAULT '0',
+  `position` varchar(100) NOT NULL,
+  `organization` varchar(100) NOT NULL,
+  `start_date` date DEFAULT NULL,
+  `end_date` date DEFAULT NULL,
+  `responsibility` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `hr_js_experience`
+--
+
+INSERT INTO `hr_js_experience` (`id`, `js_id`, `position`, `organization`, `start_date`, `end_date`, `responsibility`) VALUES
+(1, 109, 'sdafsdfasdfa', 'adf', '0000-00-00', '0000-00-00', ''),
+(2, 109, 'asds', 'sdasd', '0000-00-00', '0000-00-00', ''),
+(3, 109, 'adsf', 'adfd', '0000-00-00', '0000-00-00', ''),
+(4, 109, 'dadsf', 'adsf', '0000-00-00', '0000-00-00', '');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `hr_js_info`
 --
 
@@ -469,6 +536,64 @@ INSERT INTO `hr_lookup` (`id`, `name`, `code`, `type`, `position`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `hr_profiles`
+--
+
+CREATE TABLE IF NOT EXISTS `hr_profiles` (
+  `user_id` int(11) NOT NULL,
+  `lastname` varchar(50) NOT NULL DEFAULT '',
+  `firstname` varchar(50) NOT NULL DEFAULT '',
+  `birthday` date NOT NULL DEFAULT '0000-00-00',
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `hr_profiles`
+--
+
+INSERT INTO `hr_profiles` (`user_id`, `lastname`, `firstname`, `birthday`) VALUES
+(1, 'Admin', 'Administrator', '0000-00-00'),
+(2, 'Demo', 'Demo', '0000-00-00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `hr_profiles_fields`
+--
+
+CREATE TABLE IF NOT EXISTS `hr_profiles_fields` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `varname` varchar(50) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `field_type` varchar(50) NOT NULL,
+  `field_size` int(3) NOT NULL DEFAULT '0',
+  `field_size_min` int(3) NOT NULL DEFAULT '0',
+  `required` int(1) NOT NULL DEFAULT '0',
+  `match` varchar(255) NOT NULL DEFAULT '',
+  `range` varchar(255) NOT NULL DEFAULT '',
+  `error_message` varchar(255) NOT NULL DEFAULT '',
+  `other_validator` varchar(5000) NOT NULL DEFAULT '',
+  `default` varchar(255) NOT NULL DEFAULT '',
+  `widget` varchar(255) NOT NULL DEFAULT '',
+  `widgetparams` varchar(5000) NOT NULL DEFAULT '',
+  `position` int(3) NOT NULL DEFAULT '0',
+  `visible` int(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `varname` (`varname`,`widget`,`visible`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `hr_profiles_fields`
+--
+
+INSERT INTO `hr_profiles_fields` (`id`, `varname`, `title`, `field_type`, `field_size`, `field_size_min`, `required`, `match`, `range`, `error_message`, `other_validator`, `default`, `widget`, `widgetparams`, `position`, `visible`) VALUES
+(1, 'lastname', 'Last Name', 'VARCHAR', 50, 3, 1, '', '', 'Incorrect Last Name (length between 3 and 50 characters).', '', '', '', '', 1, 3),
+(2, 'firstname', 'First Name', 'VARCHAR', 50, 3, 1, '', '', 'Incorrect First Name (length between 3 and 50 characters).', '', '', '', '', 0, 3),
+(3, 'birthday', 'Birthday', 'DATE', 0, 0, 2, '', '', '', '', '0000-00-00', 'UWjuidate', '{"ui-theme":"redmond"}', 3, 2);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `hr_user_access`
 --
 
@@ -496,10 +621,10 @@ INSERT INTO `hr_user_access` (`id`, `role`, `operation`, `value`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hr_users`
+-- Table structure for table `hr_user_bkp`
 --
 
-CREATE TABLE IF NOT EXISTS `hr_users` (
+CREATE TABLE IF NOT EXISTS `hr_user_bkp` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(128) NOT NULL DEFAULT '',
   `password` varchar(128) DEFAULT '',
@@ -510,13 +635,13 @@ CREATE TABLE IF NOT EXISTS `hr_users` (
   `create_time` int(11) DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=128 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=127 ;
 
 --
--- Dumping data for table `hr_users`
+-- Dumping data for table `hr_user_bkp`
 --
 
-INSERT INTO `hr_users` (`id`, `username`, `password`, `salt`, `full_name`, `email`, `role`, `create_time`) VALUES
+INSERT INTO `hr_user_bkp` (`id`, `username`, `password`, `salt`, `full_name`, `email`, `role`, `create_time`) VALUES
 (58, 'vvv', '', '4c904dee223544.27081743', 'vvv', 'dsdsas@sadsd.sdef', 0, 1284525550),
 (59, 'testttt', '7cffd636682d98d33c97f3a759f8ee02', '4c9056eb4e2161.71883864', 'test', '', 0, 1284527851),
 (60, 'HJHJH', '7a521f2dae7f384e47790c15ab8a7526', '4c90578f4abc20.57130504', 'FGF', '', 0, 1284528015),
@@ -559,5 +684,52 @@ INSERT INTO `hr_users` (`id`, `username`, `password`, `salt`, `full_name`, `emai
 (123, 'zz', '1defa80c2f062d2204b9f5cc3f46ce21', '4c96edeb61ef36.64428642', 'khaled Hossain saikat', '', 3, 1284959723),
 (124, 'com1', '42a6a64f449333cc61726af06c9b1687', '4c970f17373ae7.75908523', 'com1', '', 2, 1284968215),
 (125, 'com2', '83e278e42f5c371cb535e65206b151c6', '4c9718cbc5b989.72638254', 'com2', '', 2, 1284970699),
-(126, 'com3', '04b38b2129f8ccee3383fc9e6d7bfcef', '4c97197c388d35.44861832', 'com3', '', 2, 1284970876),
-(127, 'test', 'f8506bdae61e514ff5691fcc22a058b0', NULL, 'test', 'test@tets.com', 2, 1305009979);
+(126, 'com3', '04b38b2129f8ccee3383fc9e6d7bfcef', '4c97197c388d35.44861832', 'com3', '', 2, 1284970876);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `hr_users`
+--
+
+CREATE TABLE IF NOT EXISTS `hr_users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(20) NOT NULL,
+  `password` varchar(128) NOT NULL,
+  `email` varchar(128) NOT NULL,
+  `activkey` varchar(128) NOT NULL DEFAULT '',
+  `createtime` int(10) NOT NULL DEFAULT '0',
+  `lastvisit` int(10) NOT NULL DEFAULT '0',
+  `superuser` int(1) NOT NULL DEFAULT '0',
+  `status` int(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`),
+  KEY `status` (`status`),
+  KEY `superuser` (`superuser`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `hr_users`
+--
+
+INSERT INTO `hr_users` (`id`, `username`, `password`, `email`, `activkey`, `createtime`, `lastvisit`, `superuser`, `status`) VALUES
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'webmaster@example.com', '9a24eff8c15a6a141ece27eb6947da0f', 1261146094, 1304980284, 1, 1),
+(2, 'demo', 'fe01ce2a7fbac8fafaed7c982a04e229', 'demo@example.com', '099f825543f7850cc038b90aaff39fac', 1261146096, 0, 0, 1);
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `authassignment`
+--
+ALTER TABLE `authassignment`
+  ADD CONSTRAINT `authassignment_ibfk_1` FOREIGN KEY (`itemname`) REFERENCES `authitem` (`name`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `authitemchild`
+--
+ALTER TABLE `authitemchild`
+  ADD CONSTRAINT `authitemchild_ibfk_1` FOREIGN KEY (`parent`) REFERENCES `authitem` (`name`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `authitemchild_ibfk_2` FOREIGN KEY (`child`) REFERENCES `authitem` (`name`) ON DELETE CASCADE ON UPDATE CASCADE;

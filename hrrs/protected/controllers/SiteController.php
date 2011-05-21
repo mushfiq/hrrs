@@ -21,13 +21,22 @@ class SiteController extends Controller
 		);
 	}
 
+   public function actionVerifyRegistration()
+   {
+   
+   
+   echo "ok";
+   
+   }
+   
+   
 	/**
 	 * This is the default 'index' action that is invoked
 	 * when an action is not explicitly requested by users.
 	 */
 	public function actionIndex()
 	{
-		if (Yii::app()->user->isGuest)
+	/*	if (Yii::app()->user->isGuest)
 			$this->render('index');
 		if (Yii::app()->user->name=='admin')
 			$this->redirect('admin');
@@ -36,7 +45,21 @@ class SiteController extends Controller
 		elseif (Yii::app()->user->getState('role')=='company')
 			$this->redirect('../company/home');
 		elseif (Yii::app()->user->getState('role')=='js')
-			$this->redirect('../jsinfo/home');
+			$this->redirect('../jsinfo/home');*/
+
+		if (Yii::app()->user->isGuest)
+			$this->render('index');
+      else{        
+         $user = User::model()->notsafe()->findByPk(Yii::app()->user->id);
+         if($user->usertype=='company')
+            $this->redirect($this->createUrl('/company/home'));
+         elseif($user->usertype=='applicant')
+            $this->redirect($this->createUrl('/company/home'));
+         else
+            $this->redirect($this->createUrl('/company/home')); 
+      }
+         
+         
 	}
 
 	/**

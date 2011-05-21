@@ -18,16 +18,20 @@ class LoginController extends Controller
 				// validate user input and redirect to previous page if valid
 				if($model->validate()) {
 					$this->lastViset();
-					if (strpos(Yii::app()->user->returnUrl,'/index.php')!==false)
+					/*if (strpos(Yii::app()->user->returnUrl,'/index.php')!==false)
 						$this->redirect(Yii::app()->controller->module->returnUrl);
 					else
-						$this->redirect(Yii::app()->user->returnUrl);
+						$this->redirect(Yii::app()->user->returnUrl);*/
+               $this->redirect($this->checkUserType());   
 				}
 			}
 			// display the login form
 			$this->render('/user/login',array('model'=>$model));
-		} else
-			$this->redirect(Yii::app()->controller->module->returnUrl);
+		} else{
+         //$this->checkUserType();
+         $this->redirect($this->checkUserType());
+			//$this->redirect(Yii::app()->controller->module->returnUrl);
+      }   
 	}
 	
 	private function lastViset() {
@@ -35,5 +39,15 @@ class LoginController extends Controller
 		$lastVisit->lastvisit = time();
 		$lastVisit->save();
 	}
+   
+   private function checkUserType() {
+		$user = User::model()->notsafe()->findByPk(Yii::app()->user->id);
+		if($user->usertype=='company')
+         return $this->createUrl('/company/home');
+      elseif($user->usertype=='applicant')
+         return $this->createUrl('/company/home');
+      else
+         return $this->createUrl('/company/home');
+   }
 
 }

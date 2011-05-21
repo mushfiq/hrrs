@@ -34,7 +34,7 @@ class RegistrationController extends Controller
 			}
 			
 		    if (Yii::app()->user->id) {
-		    	$this->redirect(Yii::app()->controller->module->profileUrl);
+		    	$this->redirect(Yii::app()->controller->module->profileUrl);         
 		    } else {
 		    	if(isset($_POST['RegistrationForm'])) {
 					$model->attributes=$_POST['RegistrationForm'];
@@ -49,6 +49,7 @@ class RegistrationController extends Controller
 						$model->lastvisit=((Yii::app()->controller->module->loginNotActiv||(Yii::app()->controller->module->activeAfterRegister&&Yii::app()->controller->module->sendActivationMail==false))&&Yii::app()->controller->module->autoLogin)?time():0;
 						$model->superuser=0;
 						$model->status=((Yii::app()->controller->module->activeAfterRegister)?User::STATUS_ACTIVE:User::STATUS_NOACTIVE);
+                  $model->usertype = $_POST['usertype'];
 						
 						if ($model->save()) {
 							$profile->user_id=$model->id;
@@ -62,7 +63,9 @@ class RegistrationController extends Controller
 									$identity=new UserIdentity($model->username,$soucePassword);
 									$identity->authenticate();
 									Yii::app()->user->login($identity,0);
-									$this->redirect(Yii::app()->controller->module->returnUrl);
+									//$this->redirect(Yii::app()->controller->module->returnUrl);
+                           //for redirectring create page
+                           $this->redirect($this->createPage($_POST['usertype']));   
 							} else {
 								if (!Yii::app()->controller->module->activeAfterRegister&&!Yii::app()->controller->module->sendActivationMail) {
 									Yii::app()->user->setFlash('registration',UserModule::t("Thank you for your registration. Contact Admin to activate your account."));
@@ -81,4 +84,14 @@ class RegistrationController extends Controller
 			    $this->render('/user/registration',array('model'=>$model,'profile'=>$profile));
 		    }
 	}
+      
+   private function createPage($usertype) {
+		if($usertype=='company')
+         return $this->createUrl('/company/create');
+      elseif($usertype=='applicant')
+         return $this->createUrl('/applicant/create');
+      else
+         return '';//$this->createUrl('/company/home');
+   }
+   
 }

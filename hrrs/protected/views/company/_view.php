@@ -20,8 +20,6 @@
 	<?php echo CHtml::encode($data->com_contact_no); ?>
 	<br />
 
-
-	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('com_web')); ?>:</b>
 	<?php echo CHtml::encode($data->com_web); ?>
 	<br />
@@ -30,8 +28,13 @@
 	<?php echo CHtml::encode($data->com_logo); ?>
 	<br />
 
+	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('create_time')); ?>:</b>
 	<?php echo CHtml::encode($data->create_time); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('com_user_id')); ?>:</b>
+	<?php echo CHtml::encode($data->com_user_id); ?>
 	<br />
 
 	*/ ?>

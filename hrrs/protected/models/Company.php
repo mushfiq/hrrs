@@ -1,11 +1,10 @@
 <?php
 
 /**
- * This is the model class for table "company".
+ * This is the model class for table "{{company}}".
  *
- * The followings are the available columns in table 'company':
+ * The followings are the available columns in table '{{company}}':
  * @property integer $com_id
- * @property string $com_name
  * @property string $com_type
  * @property string $com_info
  * @property string $com_address
@@ -13,6 +12,7 @@
  * @property string $com_web
  * @property string $com_logo
  * @property integer $create_time
+ * @property integer $com_user_id
  */
 class Company extends CActiveRecord
 {
@@ -41,14 +41,13 @@ class Company extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('com_type','required'),
-			array('create_time', 'numerical', 'integerOnly'=>true),
-			array('com_type, com_web, com_logo', 'length', 'max'=>50),
+			array('create_time, com_user_id', 'numerical', 'integerOnly'=>true),
+			array('com_type, com_web', 'length', 'max'=>50),
 			array('com_contact_no', 'length', 'max'=>30),
-			array('com_info, com_address', 'safe'),
+			array('com_info, com_address, com_logo', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('com_id,  com_type, com_info, com_address, com_contact_no, com_web, com_logo, create_time', 'safe', 'on'=>'search'),
+			array('com_id, com_type, com_info, com_address, com_contact_no, com_web, com_logo, create_time, com_user_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -63,20 +62,13 @@ class Company extends CActiveRecord
 		);
 	}
 
-	
-	public static function add_company()
-	{
-	
-	}
-	
-	
 	/**
 	 * @return array customized attribute labels (name=>label)
 	 */
 	public function attributeLabels()
 	{
 		return array(
-			'com_id' => 'Company ID',
+			'com_id' => 'Com Id',
 			'com_type' => 'Company Type',
 			'com_info' => 'Description',
 			'com_address' => 'Address',
@@ -84,6 +76,7 @@ class Company extends CActiveRecord
 			'com_web' => 'Web Address',
 			'com_logo' => 'Logo',
 			'create_time' => 'Create Time',
+			'com_user_id' => 'Com User',
 		);
 	}
 
@@ -98,10 +91,15 @@ class Company extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-
+		$criteria->compare('com_id',$this->com_id);
+		$criteria->compare('com_type',$this->com_type,true);
+		$criteria->compare('com_info',$this->com_info,true);
+		$criteria->compare('com_address',$this->com_address,true);
+		$criteria->compare('com_contact_no',$this->com_contact_no,true);
+		$criteria->compare('com_web',$this->com_web,true);
 		$criteria->compare('com_logo',$this->com_logo,true);
-
 		$criteria->compare('create_time',$this->create_time);
+		$criteria->compare('com_user_id',$this->com_user_id);
 
 		return new CActiveDataProvider(get_class($this), array(
 			'criteria'=>$criteria,
