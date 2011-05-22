@@ -50,13 +50,13 @@ class SiteController extends Controller
 		if (Yii::app()->user->isGuest)
 			$this->render('index');
       else{        
-         $user = User::model()->notsafe()->findByPk(Yii::app()->user->id);
-         if($user->usertype=='company')
+         $usertype = UserType::getUserType(Yii::app()->user->id);
+         if($usertype=='company')
             $this->redirect($this->createUrl('/company/home'));
-         elseif($user->usertype=='applicant')
+         elseif($usertype=='applicant')
             $this->redirect($this->createUrl('/company/home'));
          else
-            $this->redirect($this->createUrl('/company/home')); 
+            $this->render('index');
       }
          
          

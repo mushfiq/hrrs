@@ -4,6 +4,15 @@ $this->breadcrumbs=array(
 	UserModule::t("Login"),
 );
 ?>
+<style type="text/css">
+    .row{
+        font-size: 15px;
+}
+.row_buttons{
+    font-size: 35px;
+    padding-left: 100px;
+}
+</style>
 
 <h1><?php echo UserModule::t("Login"); ?></h1>
 
@@ -25,12 +34,13 @@ $this->breadcrumbs=array(
 	<?php echo CHtml::errorSummary($model); ?>
 	
 	<div class="row">
-		<?php echo CHtml::activeLabelEx($model,'username'); ?>
+		<?php echo CHtml::activeLabelEx($model,'User Name'); ?>
+           
 		<?php echo CHtml::activeTextField($model,'username') ?>
 	</div>
 	
 	<div class="row">
-		<?php echo CHtml::activeLabelEx($model,'password'); ?>
+		<?php echo CHtml::activeLabelEx($model,'Password'); ?>
 		<?php echo CHtml::activePasswordField($model,'password') ?>
 	</div>
 	
@@ -45,7 +55,7 @@ $this->breadcrumbs=array(
 		<?php echo CHtml::activeLabelEx($model,'rememberMe'); ?>
 	</div>
 
-	<div class="row submit">
+	<div class="row_buttons">
 		<?php echo CHtml::submitButton(UserModule::t("Login")); ?>
 	</div>
 	
