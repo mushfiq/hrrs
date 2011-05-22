@@ -45,9 +45,9 @@ class LoginController extends Controller
 		if($user->usertype=='company')
          return $this->createUrl('/company/home');
       elseif($user->usertype=='applicant')
-         return $this->createUrl('/company/home');
+         return $this->createUrl('/jsInfo/home');
       else
-         return $this->createUrl('/company/home');
+         return '';//'$this->createUrl('/company/home');
    }
 
 }

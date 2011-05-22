@@ -1,3 +1,26 @@
+
+
+<h2>Category Name: <?php echo $cat_name; ?></h2>
+
+<?php
+$this->widget('zii.widgets.grid.CGridView', array(
+    'dataProvider'=>$dataProvider,
+    'columns'=>array(
+		'title',
+		'responsibility',
+		'experience',
+		'recruit_number',
+		'deadline',
+        array(            // display a column with "view", "update" and "delete" buttons
+            'class'=>'CLinkColumn', 
+            'label'=>'Details',
+            'urlExpression'=>'Yii::app()->createUrl("jobPosting/show",array("id"=>$data->id))',
+        ),
+    ),
+));
+?>
+
+<!--<?php /* ?>
 <div class="cus_menu">
 <?php
 
@@ -42,3 +65,4 @@ echo "<h2>$link</h2>";
 )); ?>
 
 
+<?php */ ?>-->
