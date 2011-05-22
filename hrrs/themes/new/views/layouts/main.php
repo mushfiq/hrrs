@@ -47,9 +47,7 @@
                      array('label'=>'Login', 'url'=>array('/user/login'), 'visible'=>Yii::app()->user->isGuest),
                      array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
 
-                    // array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-                      array('label'=>'Find Jobs', 'url'=>array('JobPosting/joblist')),
-                     
+                    
                      array('label'=>'Job Seekers', 'items'=>array(
                                                                         array('label' => 'Upload CV', 'url' => array('/site/upload')),
                                                                         array('label' => 'CV Archive', 'url' => array('/site/gallery')),

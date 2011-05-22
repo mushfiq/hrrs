@@ -3335,3 +3335,154 @@ Stack trace:
 #2 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
 #3 {main} REQUEST_URI=/hrrs/hrrs/themes/adminus/images/loading.gif
 >>>>>>> ea91b273bc6f3b501ad55965d989071006e79bdb
+2011/05/22 16:56:45 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\hrrs\framework\web\CController.php:328
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\hrrs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\hrrs\framework\web\CController.php(1122): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\hrrs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\hrrs\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\wamp\www\hrrs\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('joblist')
+#9 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('JobPosting/jobl...')
+#10 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#11 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/hrrs/hrrs/JobPosting/joblist
+2011/05/22 16:56:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('JobPosting/imag...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/JobPosting/images/closelabel.gif
+2011/05/22 16:56:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/images/clo...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/images/closelabel.gif
+2011/05/22 16:56:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/images/clo...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/images/closelabel.gif
+2011/05/22 16:56:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('JobPosting/imag...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/JobPosting/images/closelabel.gif
+2011/05/22 16:57:07 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\hrrs\framework\web\CController.php:328
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\hrrs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\hrrs\framework\web\CController.php(1122): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\hrrs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\hrrs\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\wamp\www\hrrs\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('joblist')
+#9 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('jobposting/jobl...')
+#10 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#11 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/hrrs/hrrs/jobposting/joblist/images/closelabel.gif
+2011/05/22 16:57:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/adminus/images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/adminus/...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/adminus/images/closelabel.gif
+2011/05/22 16:57:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/adminus/images/loading.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/adminus/...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/adminus/images/loading.gif
+2011/05/22 16:57:40 [error] [php] Undefined index: id (C:\wamp\www\hrrs\hrrs\protected\controllers\JobPostingController.php:41)
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(133): JobPostingController->runAction()
+#1 C:\wamp\www\hrrs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\wamp\www\hrrs\framework\web\CController.php(1122): CAccessControlFilter->filter()
+#3 C:\wamp\www\hrrs\framework\web\filters\CInlineFilter.php(59): JobPostingController->filterAccessControl()
+#4 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\hrrs\framework\web\CController.php(283): CFilterChain->run()
+#6 C:\wamp\www\hrrs\framework\web\CController.php(257): JobPostingController->runActionWithFilters()
+#7 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): JobPostingController->run()
+#8 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController()
+#9 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#10 C:\wamp\www\hrrs\hrrs\index.php(13): CWebApplication->run()
+REQUEST_URI=/hrrs/hrrs/jobPosting/show/images/closelabel.gif
+in C:\wamp\www\hrrs\hrrs\protected\controllers\JobPostingController.php (41)
+in C:\wamp\www\hrrs\hrrs\index.php (13)
+2011/05/22 16:57:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/adminus/images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/adminus/...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/adminus/images/closelabel.gif
+2011/05/22 16:57:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/adminus/images/loading.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/adminus/...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/adminus/images/loading.gif
+2011/05/22 17:11:00 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\hrrs\framework\web\CController.php:328
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\hrrs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\hrrs\framework\web\CController.php(1122): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\hrrs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\hrrs\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\wamp\www\hrrs\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('joblist')
+#9 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('JobPosting/jobl...')
+#10 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#11 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/hrrs/hrrs/JobPosting/joblist
+2011/05/22 17:23:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/adminus/images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/adminus/...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/adminus/images/closelabel.gif
+2011/05/22 17:23:40 [error] [php] Undefined index: id (C:\wamp\www\hrrs\hrrs\protected\controllers\JobPostingController.php:41)
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(133): JobPostingController->runAction()
+#1 C:\wamp\www\hrrs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\wamp\www\hrrs\framework\web\CController.php(1122): CAccessControlFilter->filter()
+#3 C:\wamp\www\hrrs\framework\web\filters\CInlineFilter.php(59): JobPostingController->filterAccessControl()
+#4 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\hrrs\framework\web\CController.php(283): CFilterChain->run()
+#6 C:\wamp\www\hrrs\framework\web\CController.php(257): JobPostingController->runActionWithFilters()
+#7 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): JobPostingController->run()
+#8 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController()
+#9 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#10 C:\wamp\www\hrrs\hrrs\index.php(13): CWebApplication->run()
+REQUEST_URI=/hrrs/hrrs/jobPosting/show/images/closelabel.gif
+in C:\wamp\www\hrrs\hrrs\protected\controllers\JobPostingController.php (41)
+in C:\wamp\www\hrrs\hrrs\index.php (13)
+2011/05/22 17:23:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/adminus/images/loading.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/adminus/...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/adminus/images/loading.gif
+2011/05/22 17:23:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/adminus/images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/adminus/...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/adminus/images/closelabel.gif
