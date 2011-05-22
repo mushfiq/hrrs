@@ -3935,3 +3935,27 @@ Stack trace:
 #4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
 >>>>>>> 7f8422e3ccf2a617ebf82983f4f66412e492cc1d
 #5 {main} REQUEST_URI=/hrrs/hrrs/site/css/wysiwyg.css
+2011/05/22 18:46:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\xampp\htdocs\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CController.php(262): CController->missingAction('css')
+#1 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): CController->run('css')
+#2 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/css/wysiwy...')
+#3 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/css/wysiwyg.css
+2011/05/22 18:46:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gallery".' in C:\xampp\htdocs\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CController.php(262): CController->missingAction('gallery')
+#1 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): CController->run('gallery')
+#2 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/gallery')
+#3 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/gallery
+2011/05/22 18:46:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "addjs".' in C:\xampp\htdocs\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\xampp\htdocs\hrrs\framework\web\CController.php(262): CController->missingAction('addjs')
+#1 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(328): CController->run('addjs')
+#2 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/addjs')
+#3 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/addjs
