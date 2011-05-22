@@ -1,4 +1,0 @@
-protected/runtime/application.log
-assets/*
-protected/runtime/*
-!.gitignore

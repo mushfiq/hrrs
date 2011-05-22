@@ -1,0 +1,7 @@
+INSTALL LAMP STACK In Your Test Environment
+Import the db from db/hrrs.sql from project directory
+Keep the project into your webb root.
+And go to the browser and type http://localhost/hrrs
+
+
+N.B:you wil; have to change the db configuration by editing hrrs\protected\config\main.php line no. 59-66.

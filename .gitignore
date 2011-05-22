@@ -1,0 +1,5 @@
+hrrs/protected/runtime/application.log
+hrrs/assets/*
+hrrs/protected/runtime/*
+nbproject/*
+!.gitignore

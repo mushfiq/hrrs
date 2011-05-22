@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 3.1.3.1
+-- version 3.2.0.1
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 18, 2011 at 06:37 PM
--- Server version: 5.1.33
--- PHP Version: 5.2.9
+-- Generation Time: May 22, 2011 at 05:55 PM
+-- Server version: 5.1.36
+-- PHP Version: 5.3.0
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
@@ -18,8 +18,6 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 --
 -- Database: `hrrs`
 --
-CREATE DATABASE `hrrs` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `hrrs`;
 
 -- --------------------------------------------------------
 
@@ -33,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `authassignment` (
   `bizrule` text,
   `data` text,
   PRIMARY KEY (`itemname`,`userid`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `authassignment`
@@ -55,18 +53,18 @@ CREATE TABLE IF NOT EXISTS `authitem` (
   `bizrule` text,
   `data` text,
   PRIMARY KEY (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `authitem`
 --
 
 INSERT INTO `authitem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES
-('Auth Assignments Manager', 2, 'Manages Role Assignments. RBAM required role.', NULL, 'N;'),
+('RBAC Manager', 2, 'Manages Auth Items and Role Assignments. RBAM required role.', NULL, 'N;'),
 ('Auth Items Manager', 2, 'Manages Auth Items. RBAM required role.', NULL, 'N;'),
+('Auth Assignments Manager', 2, 'Manages Role Assignments. RBAM required role.', NULL, 'N;'),
 ('Authenticated', 2, 'Default role for users that are logged in. RBAC default role.', 'return !Yii::app()->getUser()->getIsGuest();', 'N;'),
-('Guest', 2, 'Default role for users that are not logged in. RBAC default role.', 'return Yii::app()->getUser()->getIsGuest();', 'N;'),
-('RBAC Manager', 2, 'Manages Auth Items and Role Assignments. RBAM required role.', NULL, 'N;');
+('Guest', 2, 'Default role for users that are not logged in. RBAC default role.', 'return Yii::app()->getUser()->getIsGuest();', 'N;');
 
 -- --------------------------------------------------------
 
@@ -79,7 +77,7 @@ CREATE TABLE IF NOT EXISTS `authitemchild` (
   `child` varchar(64) NOT NULL,
   PRIMARY KEY (`parent`,`child`),
   KEY `child` (`child`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `authitemchild`
@@ -100,15 +98,83 @@ CREATE TABLE IF NOT EXISTS `hr_category` (
   `name` varchar(100) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `hr_category`
 --
 
 INSERT INTO `hr_category` (`id`, `name`) VALUES
-(2, 'rereetre  erferhfr  erhfr erur'),
-(1, 'sadasd');
+(2, 'Accounting'),
+(3, 'It'),
+(1, 'Marketing'),
+(4, 'NGO');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `hr_company`
+--
+
+CREATE TABLE IF NOT EXISTS `hr_company` (
+  `com_id` int(11) NOT NULL AUTO_INCREMENT,
+  `com_name` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `com_type` varchar(50) CHARACTER SET utf8 DEFAULT NULL,
+  `com_info` text COLLATE utf8_unicode_ci,
+  `com_address` text CHARACTER SET utf8,
+  `com_contact_no` varchar(30) CHARACTER SET utf8 DEFAULT NULL,
+  `com_web` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `com_logo` blob,
+  `create_time` int(11) DEFAULT NULL,
+  `com_user_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`com_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=41 ;
+
+--
+-- Dumping data for table `hr_company`
+--
+
+INSERT INTO `hr_company` (`com_id`, `com_name`, `com_type`, `com_info`, `com_address`, `com_contact_no`, `com_web`, `com_logo`, `create_time`, `com_user_id`) VALUES
+(1, NULL, 'dsa', 'ghgh', 'hghg', 'ghgh', 'ghg', 0x686768, NULL, 60),
+(2, NULL, 'bhg', 'hgh', 'ghgh', 'ghg', 'hg', 0x68676a, NULL, 61),
+(3, NULL, 'telecom', 'desc', 'addr', '2313sdad', 'hasds', 0x6768, NULL, 78),
+(4, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(5, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 82),
+(6, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 83),
+(7, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 84),
+(8, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 85),
+(9, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 86),
+(10, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 87),
+(11, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 88),
+(12, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 89),
+(13, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 90),
+(14, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 91),
+(15, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 92),
+(16, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 93),
+(17, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 94),
+(18, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 95),
+(19, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 96),
+(20, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 97),
+(21, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 98),
+(22, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 99),
+(23, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 100),
+(24, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 101),
+(25, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 102),
+(26, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 103),
+(27, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 104),
+(28, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 107),
+(29, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 110),
+(30, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 111),
+(31, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 112),
+(32, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 113),
+(33, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 114),
+(34, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 115),
+(35, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 117),
+(36, NULL, 'test com', 'dsfsdf\r\nsdfg\r\nsd\r\nsd\r\ngsdf', 'sdfsdg\r\nsdfgsdg\r\nsd\r\ngs\r\ng\r\nsf', 'dfgfgdf', 'ggg', 0x676767, NULL, 119),
+(37, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 120),
+(38, NULL, 'aswdf', 'aewdf', 'adss', '', '', '', NULL, 124),
+(39, NULL, 'sadfsg', 'hsghd', '', '', '', '', NULL, 126),
+(40, NULL, 'Application Developing Firm', 'An application Developing Firm', 'Baridhara', '01717647592', 'http://cavecoder.com', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -128,70 +194,6 @@ CREATE TABLE IF NOT EXISTS `hr_com_js` (
 -- Dumping data for table `hr_com_js`
 --
 
-
--- --------------------------------------------------------
-
---
--- Table structure for table `hr_company`
---
-
-CREATE TABLE IF NOT EXISTS `hr_company` (
-  `com_id` int(11) NOT NULL AUTO_INCREMENT,
-  `com_type` varchar(50) CHARACTER SET utf8 DEFAULT NULL,
-  `com_info` text COLLATE utf8_unicode_ci,
-  `com_address` text CHARACTER SET utf8,
-  `com_contact_no` varchar(30) CHARACTER SET utf8 DEFAULT NULL,
-  `com_web` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `com_logo` blob,
-  `create_time` int(11) DEFAULT NULL,
-  `com_user_id` int(11) DEFAULT NULL,
-  PRIMARY KEY (`com_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=40 ;
-
---
--- Dumping data for table `hr_company`
---
-
-INSERT INTO `hr_company` (`com_id`, `com_type`, `com_info`, `com_address`, `com_contact_no`, `com_web`, `com_logo`, `create_time`, `com_user_id`) VALUES
-(1, 'dsa', 'ghgh', 'hghg', 'ghgh', 'ghg', 0x686768, NULL, 60),
-(2, 'bhg', 'hgh', 'ghgh', 'ghg', 'hg', 0x68676a, NULL, 61),
-(3, 'telecom', 'desc', 'addr', '2313sdad', 'hasds', 0x6768, NULL, 78),
-(4, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(5, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 82),
-(6, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 83),
-(7, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 84),
-(8, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 85),
-(9, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 86),
-(10, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 87),
-(11, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 88),
-(12, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 89),
-(13, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 90),
-(14, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 91),
-(15, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 92),
-(16, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 93),
-(17, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 94),
-(18, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 95),
-(19, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 96),
-(20, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 97),
-(21, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 98),
-(22, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 99),
-(23, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 100),
-(24, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 101),
-(25, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 102),
-(26, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 103),
-(27, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 104),
-(28, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 107),
-(29, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 110),
-(30, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 111),
-(31, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 112),
-(32, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 113),
-(33, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 114),
-(34, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 115),
-(35, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 117),
-(36, 'test com', 'dsfsdf\r\nsdfg\r\nsd\r\nsd\r\ngsdf', 'sdfsdg\r\nsdfgsdg\r\nsd\r\ngs\r\ng\r\nsf', 'dfgfgdf', 'ggg', 0x676767, NULL, 119),
-(37, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 120),
-(38, 'aswdf', 'aewdf', 'adss', '', '', '', NULL, 124),
-(39, 'sadfsg', 'hsghd', '', '', '', '', NULL, 126);
 
 -- --------------------------------------------------------
 
@@ -238,7 +240,7 @@ CREATE TABLE IF NOT EXISTS `hr_job_posting1` (
   `published` int(11) DEFAULT NULL,
   `create_time` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=13 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=18 ;
 
 --
 -- Dumping data for table `hr_job_posting1`
@@ -256,7 +258,12 @@ INSERT INTO `hr_job_posting1` (`id`, `title`, `category`, `responsibility`, `des
 (9, 'rfr', 2, '', '', NULL, NULL, NULL, '', NULL, NULL, 78, NULL, NULL, 1284647935),
 (10, 'sadsad', 2, 'sdfdsfsd', 'werre', NULL, NULL, NULL, '', NULL, NULL, 78, NULL, NULL, 1284648120),
 (11, 'zsdsds', 2, 'sfd', '', NULL, NULL, '0000-00-00', '', NULL, NULL, 109, NULL, NULL, 1284790032),
-(12, 'ertrer', 2, 'sdfefe', '', NULL, NULL, '0000-00-00', '', NULL, NULL, 121, NULL, NULL, 1284903155);
+(12, 'ertrer', 2, 'sdfefe', '', NULL, NULL, '0000-00-00', '', NULL, NULL, 121, NULL, NULL, 1284903155),
+(13, 'wewe', 2, 'wrwq', '', NULL, NULL, '0000-00-00', '', NULL, NULL, 12, NULL, NULL, 1305993199),
+(14, 'erer', 1, 'were', '', NULL, NULL, '0000-00-00', '', NULL, NULL, 12, NULL, NULL, 1305995898),
+(15, 'job4', 2, 'job4', '', NULL, NULL, '0000-00-00', '', NULL, NULL, 12, NULL, NULL, 1305996181),
+(16, 'job6', 2, 'ewr', '', NULL, NULL, '0000-00-00', '', NULL, NULL, 12, NULL, NULL, 1305996219),
+(17, 'job7', 2, '', '', NULL, NULL, '0000-00-00', '', NULL, NULL, 12, NULL, NULL, 1306048622);
 
 -- --------------------------------------------------------
 
@@ -290,7 +297,9 @@ INSERT INTO `hr_job_posting2` (`id`, `gender`, `accademic_req`, `age_from`, `age
 (9, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (10, 1, '', NULL, NULL, '', 1, 1, '', ''),
 (11, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(12, 1, '', NULL, NULL, 'ewdr', 1, 1, '', '');
+(12, 1, '', NULL, NULL, 'ewdr', 1, 1, '', ''),
+(16, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(17, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -553,7 +562,17 @@ CREATE TABLE IF NOT EXISTS `hr_profiles` (
 
 INSERT INTO `hr_profiles` (`user_id`, `lastname`, `firstname`, `birthday`) VALUES
 (1, 'Admin', 'Administrator', '0000-00-00'),
-(2, 'Demo', 'Demo', '0000-00-00');
+(2, 'Demo', 'Demo', '0000-00-00'),
+(3, '', '', '0000-00-00'),
+(4, '', '', '0000-00-00'),
+(5, '', '', '0000-00-00'),
+(6, '', '', '0000-00-00'),
+(7, '', '', '0000-00-00'),
+(8, '', '', '0000-00-00'),
+(9, '', '', '0000-00-00'),
+(10, '', '', '0000-00-00'),
+(11, '', '', '0000-00-00'),
+(12, '', '', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -587,9 +606,43 @@ CREATE TABLE IF NOT EXISTS `hr_profiles_fields` (
 --
 
 INSERT INTO `hr_profiles_fields` (`id`, `varname`, `title`, `field_type`, `field_size`, `field_size_min`, `required`, `match`, `range`, `error_message`, `other_validator`, `default`, `widget`, `widgetparams`, `position`, `visible`) VALUES
-(1, 'lastname', 'Last Name', 'VARCHAR', 50, 3, 1, '', '', 'Incorrect Last Name (length between 3 and 50 characters).', '', '', '', '', 1, 3),
-(2, 'firstname', 'First Name', 'VARCHAR', 50, 3, 1, '', '', 'Incorrect First Name (length between 3 and 50 characters).', '', '', '', '', 0, 3),
-(3, 'birthday', 'Birthday', 'DATE', 0, 0, 2, '', '', '', '', '0000-00-00', 'UWjuidate', '{"ui-theme":"redmond"}', 3, 2);
+(1, 'lastname', 'Last Name', 'VARCHAR', 50, 3, 0, '', '', 'Incorrect Last Name (length between 3 and 50 characters).', '', '', '', '', 1, 3),
+(2, 'firstname', 'First Name', 'VARCHAR', 50, 3, 0, '', '', 'Incorrect First Name (length between 3 and 50 characters).', '', '', '', '', 0, 3),
+(3, 'birthday', 'Birthday', 'DATE', 0, 0, 0, '', '', '', '', '0000-00-00', 'UWjuidate', '{"ui-theme":"redmond"}', 3, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `hr_users`
+--
+
+CREATE TABLE IF NOT EXISTS `hr_users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(20) NOT NULL,
+  `password` varchar(128) NOT NULL,
+  `email` varchar(128) NOT NULL,
+  `activkey` varchar(128) NOT NULL DEFAULT '',
+  `createtime` int(10) NOT NULL DEFAULT '0',
+  `lastvisit` int(10) NOT NULL DEFAULT '0',
+  `superuser` int(1) NOT NULL DEFAULT '0',
+  `status` int(1) NOT NULL DEFAULT '0',
+  `usertype` varchar(10) DEFAULT NULL COMMENT 'admin,company,applicant',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`),
+  KEY `status` (`status`),
+  KEY `superuser` (`superuser`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=14 ;
+
+--
+-- Dumping data for table `hr_users`
+--
+
+INSERT INTO `hr_users` (`id`, `username`, `password`, `email`, `activkey`, `createtime`, `lastvisit`, `superuser`, `status`, `usertype`) VALUES
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'webmaster@example.com', '9a24eff8c15a6a141ece27eb6947da0f', 1261146094, 1305900627, 1, 1, 'company'),
+(2, 'demo', 'fe01ce2a7fbac8fafaed7c982a04e229', 'demo@example.com', '099f825543f7850cc038b90aaff39fac', 1261146096, 0, 0, 1, NULL),
+(12, 'saikat', '81dc9bdb52d04dc20036dbd8313ed055', 'saikat@gmail.com', 'd8070910fa72185c88426682f63e978a', 1305990126, 1306086130, 0, 1, 'company'),
+(13, 'mushfiq', '81dc9bdb52d04dc20036dbd8313ed055', 'mushfiq@newscred.com', 'd8070910fa72185c88426682f63e978a', 0, 0, 0, 0, 'company');
 
 -- --------------------------------------------------------
 
@@ -685,51 +738,3 @@ INSERT INTO `hr_user_bkp` (`id`, `username`, `password`, `salt`, `full_name`, `e
 (124, 'com1', '42a6a64f449333cc61726af06c9b1687', '4c970f17373ae7.75908523', 'com1', '', 2, 1284968215),
 (125, 'com2', '83e278e42f5c371cb535e65206b151c6', '4c9718cbc5b989.72638254', 'com2', '', 2, 1284970699),
 (126, 'com3', '04b38b2129f8ccee3383fc9e6d7bfcef', '4c97197c388d35.44861832', 'com3', '', 2, 1284970876);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `hr_users`
---
-
-CREATE TABLE IF NOT EXISTS `hr_users` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(20) NOT NULL,
-  `password` varchar(128) NOT NULL,
-  `email` varchar(128) NOT NULL,
-  `activkey` varchar(128) NOT NULL DEFAULT '',
-  `createtime` int(10) NOT NULL DEFAULT '0',
-  `lastvisit` int(10) NOT NULL DEFAULT '0',
-  `superuser` int(1) NOT NULL DEFAULT '0',
-  `status` int(1) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `username` (`username`),
-  UNIQUE KEY `email` (`email`),
-  KEY `status` (`status`),
-  KEY `superuser` (`superuser`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
-
---
--- Dumping data for table `hr_users`
---
-
-INSERT INTO `hr_users` (`id`, `username`, `password`, `email`, `activkey`, `createtime`, `lastvisit`, `superuser`, `status`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'webmaster@example.com', '9a24eff8c15a6a141ece27eb6947da0f', 1261146094, 1304980284, 1, 1),
-(2, 'demo', 'fe01ce2a7fbac8fafaed7c982a04e229', 'demo@example.com', '099f825543f7850cc038b90aaff39fac', 1261146096, 0, 0, 1);
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `authassignment`
---
-ALTER TABLE `authassignment`
-  ADD CONSTRAINT `authassignment_ibfk_1` FOREIGN KEY (`itemname`) REFERENCES `authitem` (`name`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `authitemchild`
---
-ALTER TABLE `authitemchild`
-  ADD CONSTRAINT `authitemchild_ibfk_1` FOREIGN KEY (`parent`) REFERENCES `authitem` (`name`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `authitemchild_ibfk_2` FOREIGN KEY (`child`) REFERENCES `authitem` (`name`) ON DELETE CASCADE ON UPDATE CASCADE;
