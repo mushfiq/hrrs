@@ -1552,3 +1552,723 @@ Stack trace:
 #17 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
 #18 {main} REQUEST_URI=/hrrs/hrrs/JobPosting/joblist/4
 >>>>>>> 4563d2268b7d0c20ab4816c2172dfaa62d6eb7a0
+2011/05/22 15:16:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('images/closelab...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/images/closelabel.gif
+2011/05/22 15:17:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('images/closelab...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/images/closelabel.gif
+2011/05/22 15:17:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/images/clo...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/images/closelabel.gif
+2011/05/22 15:18:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/images/clo...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/images/closelabel.gif
+2011/05/22 15:18:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/images/clo...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/images/closelabel.gif
+2011/05/22 15:18:56 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\hrrs\framework\web\CController.php:328
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\hrrs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\hrrs\framework\web\CController.php(1122): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\hrrs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\hrrs\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\wamp\www\hrrs\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('joblist')
+#9 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('JobPosting/jobl...')
+#10 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#11 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/hrrs/hrrs/JobPosting/joblist
+2011/05/22 15:18:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('JobPosting/imag...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/JobPosting/images/closelabel.gif
+2011/05/22 15:18:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/images/clo...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/user/images/closelabel.gif
+2011/05/22 15:19:07 [error] [exception.CException] exception 'CException' with message 'RegistrationController cannot find the requested view "/user/registration".' in C:\wamp\www\hrrs\framework\web\CController.php:875
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(779): CController->renderPartial('/user/registrat...', Array, true)
+#1 C:\wamp\www\hrrs\hrrs\protected\modules\user\controllers\RegistrationController.php(84): CController->render('/user/registrat...', Array)
+#2 C:\wamp\www\hrrs\framework\web\actions\CInlineAction.php(50): RegistrationController->actionRegistration()
+#3 C:\wamp\www\hrrs\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\hrrs\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\hrrs\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('')
+#7 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/registrati...')
+#8 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#9 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/hrrs/hrrs/user/registration
+2011/05/22 15:19:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/images/clo...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/user/images/closelabel.gif
+2011/05/22 15:22:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/images/clo...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/user/images/closelabel.gif
+2011/05/22 15:22:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/images/clo...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/user/images/closelabel.gif
+2011/05/22 15:23:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/images/clo...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/user/images/closelabel.gif
+2011/05/22 15:24:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/images/clo...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/user/images/closelabel.gif
+2011/05/22 15:24:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/images/clo...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/user/images/closelabel.gif
+2011/05/22 15:26:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/recovery/i...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/user/recovery/images/closelabel.gif
+2011/05/22 15:26:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/adminus/images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/adminus/...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/adminus/images/closelabel.gif
+2011/05/22 15:26:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/adminus/images/loading.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/adminus/...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/adminus/images/loading.gif
+2011/05/22 15:26:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/images/clo...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/user/images/closelabel.gif
+2011/05/22 15:26:16 [error] [exception.CException] exception 'CException' with message 'RegistrationController cannot find the requested view "/user/registration".' in C:\wamp\www\hrrs\framework\web\CController.php:875
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(779): CController->renderPartial('/user/registrat...', Array, true)
+#1 C:\wamp\www\hrrs\hrrs\protected\modules\user\controllers\RegistrationController.php(84): CController->render('/user/registrat...', Array)
+#2 C:\wamp\www\hrrs\framework\web\actions\CInlineAction.php(50): RegistrationController->actionRegistration()
+#3 C:\wamp\www\hrrs\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\hrrs\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\hrrs\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('')
+#7 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/registrati...')
+#8 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#9 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/hrrs/hrrs/user/registration
+2011/05/22 15:26:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/images/clo...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/user/images/closelabel.gif
+2011/05/22 15:27:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/JobPosting/joblist".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/JobPosting...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/user/JobPosting/joblist
+2011/05/22 15:27:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/adminus/images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/adminus/...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/adminus/images/closelabel.gif
+2011/05/22 15:27:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/adminus/images/loading.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('themes/adminus/...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/themes/adminus/images/loading.gif
+2011/05/22 15:28:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\hrrs\framework\web\CController.php:328
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\hrrs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\hrrs\framework\web\CController.php(1122): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\hrrs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\hrrs\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\wamp\www\hrrs\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('joblist')
+#9 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('JobPosting/jobl...')
+#10 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#11 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/hrrs/hrrs/JobPosting/joblist
+2011/05/22 15:28:17 [error] [exception.CException] exception 'CException' with message 'RegistrationController cannot find the requested view "/user/registration".' in C:\wamp\www\hrrs\framework\web\CController.php:875
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(779): CController->renderPartial('/user/registrat...', Array, true)
+#1 C:\wamp\www\hrrs\hrrs\protected\modules\user\controllers\RegistrationController.php(84): CController->render('/user/registrat...', Array)
+#2 C:\wamp\www\hrrs\framework\web\actions\CInlineAction.php(50): RegistrationController->actionRegistration()
+#3 C:\wamp\www\hrrs\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\hrrs\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\hrrs\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('')
+#7 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/registrati...')
+#8 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#9 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/hrrs/hrrs/user/registration
+2011/05/22 15:28:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/images/clo...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/images/closelabel.gif
+2011/05/22 15:28:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/images/clo...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/user/images/closelabel.gif
+2011/05/22 15:30:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/images/clo...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/user/images/closelabel.gif
+2011/05/22 15:30:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/images/clo...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/user/images/closelabel.gif
+2011/05/22 15:31:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/images/clo...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/user/images/closelabel.gif
+2011/05/22 15:31:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/images/clo...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/user/images/closelabel.gif
+2011/05/22 15:31:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/images/clo...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/user/images/closelabel.gif
+2011/05/22 15:34:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/images/clo...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/user/images/closelabel.gif
+2011/05/22 15:37:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/images/clo...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/images/closelabel.gif
+2011/05/22 15:37:02 [error] [exception.CException] exception 'CException' with message 'RegistrationController cannot find the requested view "/user/registration".' in C:\wamp\www\hrrs\framework\web\CController.php:875
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(779): CController->renderPartial('/user/registrat...', Array, true)
+#1 C:\wamp\www\hrrs\hrrs\protected\modules\user\controllers\RegistrationController.php(84): CController->render('/user/registrat...', Array)
+#2 C:\wamp\www\hrrs\framework\web\actions\CInlineAction.php(50): RegistrationController->actionRegistration()
+#3 C:\wamp\www\hrrs\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\hrrs\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\hrrs\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('')
+#7 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/registrati...')
+#8 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#9 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/hrrs/hrrs/user/registration
+2011/05/22 15:37:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/images/clo...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/images/closelabel.gif
+2011/05/22 15:37:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/images/clo...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/user/images/closelabel.gif
+2011/05/22 15:37:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('company/images/...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/company/images/closelabel.gif
+2011/05/22 15:39:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('css')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('css')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/css/wysiwy...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/css/wysiwyg.css
+2011/05/22 15:39:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/images/clo...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/images/closelabel.gif
+2011/05/22 15:39:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gallery".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('gallery')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('gallery')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/gallery')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/gallery
+2011/05/22 15:39:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/images/clo...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/images/closelabel.gif
+2011/05/22 15:39:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('css')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('css')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/css/wysiwy...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/css/wysiwyg.css
+2011/05/22 15:39:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/images/clo...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/images/closelabel.gif
+2011/05/22 15:39:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('css')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('css')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/css/wysiwy...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/css/wysiwyg.css
+2011/05/22 15:39:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('css')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('css')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/css/wysiwy...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/css/wysiwyg.css
+2011/05/22 15:40:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('css')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('css')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/css/wysiwy...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/css/wysiwyg.css
+2011/05/22 15:40:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/images/clo...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/images/closelabel.gif
+2011/05/22 15:40:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('css')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('css')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/css/wysiwy...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/css/wysiwyg.css
+2011/05/22 15:41:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('css')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('css')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/css/wysiwy...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/css/wysiwyg.css
+2011/05/22 15:41:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('css')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('css')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/css/wysiwy...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/css/wysiwyg.css
+2011/05/22 15:46:04 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\hrrs\framework\web\CController.php:328
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\hrrs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\hrrs\framework\web\CController.php(1122): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\hrrs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\hrrs\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\wamp\www\hrrs\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('joblist')
+#9 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('JobPosting/jobl...')
+#10 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#11 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/hrrs/hrrs/JobPosting/joblist
+2011/05/22 15:46:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "addjs".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('addjs')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('addjs')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/addjs')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/addjs
+2011/05/22 15:46:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/addcompany".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/addcompany')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/user/addcompany
+2011/05/22 15:46:52 [error] [exception.CException] exception 'CException' with message 'RegistrationController cannot find the requested view "/user/registration".' in C:\wamp\www\hrrs\framework\web\CController.php:875
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(779): CController->renderPartial('/user/registrat...', Array, true)
+#1 C:\wamp\www\hrrs\hrrs\protected\modules\user\controllers\RegistrationController.php(84): CController->render('/user/registrat...', Array)
+#2 C:\wamp\www\hrrs\framework\web\actions\CInlineAction.php(50): RegistrationController->actionRegistration()
+#3 C:\wamp\www\hrrs\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\hrrs\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\hrrs\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('')
+#7 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('user/registrati...')
+#8 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#9 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/hrrs/hrrs/user/registration
+2011/05/22 15:50:00 [error] [php] Undefined variable: skin (C:\wamp\www\hrrs\hrrs\protected\views\jobPosting\_form.php:53)
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(866): JobPostingController->renderFile()
+#1 C:\wamp\www\hrrs\hrrs\protected\views\jobPosting\create.php(13): JobPostingController->renderPartial()
+#2 C:\wamp\www\hrrs\framework\web\CBaseController.php(119): require()
+#3 C:\wamp\www\hrrs\framework\web\CBaseController.php(88): JobPostingController->renderInternal()
+#4 C:\wamp\www\hrrs\framework\web\CController.php(866): JobPostingController->renderFile()
+#5 C:\wamp\www\hrrs\framework\web\CController.php(779): JobPostingController->renderPartial()
+#6 C:\wamp\www\hrrs\hrrs\protected\controllers\JobPostingController.php(78): JobPostingController->render()
+#7 C:\wamp\www\hrrs\framework\web\actions\CInlineAction.php(50): JobPostingController->actionCreate()
+#8 C:\wamp\www\hrrs\framework\web\CController.php(300): CInlineAction->runWithParams()
+#9 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(133): JobPostingController->runAction()
+#10 C:\wamp\www\hrrs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\wamp\www\hrrs\framework\web\CController.php(1122): CAccessControlFilter->filter()
+#12 C:\wamp\www\hrrs\framework\web\filters\CInlineFilter.php(59): JobPostingController->filterAccessControl()
+#13 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\wamp\www\hrrs\framework\web\CController.php(283): CFilterChain->run()
+#15 C:\wamp\www\hrrs\framework\web\CController.php(257): JobPostingController->runActionWithFilters()
+#16 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): JobPostingController->run()
+#17 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController()
+#18 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#19 C:\wamp\www\hrrs\hrrs\index.php(13): CWebApplication->run()
+REQUEST_URI=/hrrs/hrrs/jobposting/create
+in C:\wamp\www\hrrs\hrrs\protected\views\jobPosting\_form.php (53)
+in C:\wamp\www\hrrs\hrrs\protected\views\jobPosting\create.php (13)
+in C:\wamp\www\hrrs\hrrs\protected\controllers\JobPostingController.php (78)
+2011/05/22 15:51:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "company1/home".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('company1/home')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/company1/home
+2011/05/22 15:52:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "companas".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('companas')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/companas/
+2011/05/22 15:54:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('css')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('css')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/css/wysiwy...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/css/wysiwyg.css
+2011/05/22 15:54:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/images/clo...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/images/closelabel.gif
+2011/05/22 15:54:17 [warning] [application] Failed to set unsafe attribute "pdf".
+in C:\wamp\www\hrrs\hrrs\protected\controllers\SiteController.php (156)
+in C:\wamp\www\hrrs\hrrs\index.php (13)
+2011/05/22 15:54:17 [error] [exception.CException] exception 'CException' with message 'Property "UploadForm.uploadFile" is not defined.' in C:\wamp\www\hrrs\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\hrrs\hrrs\protected\controllers\SiteController.php(157): CComponent->__set('uploadFile', NULL)
+#1 C:\wamp\www\hrrs\framework\web\actions\CInlineAction.php(50): SiteController->actionUpload()
+#2 C:\wamp\www\hrrs\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\hrrs\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\hrrs\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('upload')
+#6 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/upload')
+#7 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#8 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#9 {main} REQUEST_URI=/hrrs/hrrs/site/upload
+2011/05/22 15:54:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('css')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('css')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/css/wysiwy...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/css/wysiwyg.css
+2011/05/22 15:54:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/images/clo...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/images/closelabel.gif
+2011/05/22 16:14:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('css')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('css')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/css/wysiwy...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/css/wysiwyg.css
+2011/05/22 16:14:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/images/clo...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/images/closelabel.gif
+2011/05/22 16:15:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('css')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('css')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/css/wysiwy...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/css/wysiwyg.css
+2011/05/22 16:15:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/images/clo...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/images/closelabel.gif
+2011/05/22 16:16:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('css')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('css')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/css/wysiwy...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/css/wysiwyg.css
+2011/05/22 16:16:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/images/clo...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/images/closelabel.gif
+2011/05/22 16:16:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('css')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('css')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/css/wysiwy...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/css/wysiwyg.css
+2011/05/22 16:16:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/images/clo...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/images/closelabel.gif
+2011/05/22 16:17:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('css')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('css')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/css/wysiwy...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/css/wysiwyg.css
+2011/05/22 16:17:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/images/clo...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/images/closelabel.gif
+2011/05/22 16:19:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('css')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('css')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/css/wysiwy...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/css/wysiwyg.css
+2011/05/22 16:19:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/images/clo...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/images/closelabel.gif
+2011/05/22 16:19:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gallery".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('gallery')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('gallery')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/gallery')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/gallery
+2011/05/22 16:19:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/images/clo...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/images/closelabel.gif
+2011/05/22 16:19:38 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\hrrs\framework\web\CController.php:328
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\hrrs\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\hrrs\framework\web\CController.php(1122): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\hrrs\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\hrrs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\hrrs\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\wamp\www\hrrs\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('joblist')
+#9 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('JobPosting/jobl...')
+#10 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#11 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/hrrs/hrrs/JobPosting/joblist
+2011/05/22 16:19:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('JobPosting/imag...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/JobPosting/images/closelabel.gif
+2011/05/22 16:19:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('images/closelab...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/images/closelabel.gif
+2011/05/22 16:21:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "companas".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('companas')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/companas/
+2011/05/22 16:22:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "companas".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('companas')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/companas/
+2011/05/22 16:23:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('images/closelab...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/images/closelabel.gif
+2011/05/22 16:24:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('images/closelab...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/images/closelabel.gif
+2011/05/22 16:27:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('images/closelab...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/images/closelabel.gif
+2011/05/22 16:28:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('images/closelab...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/images/closelabel.gif
+2011/05/22 16:31:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/closelabel.gif".' in C:\wamp\www\hrrs\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('images/closelab...')
+#1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/hrrs/hrrs/images/closelabel.gif
+2011/05/22 16:31:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('images')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('images')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('company/images/...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/company/images/closelabel.gif

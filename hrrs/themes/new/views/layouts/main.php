@@ -34,22 +34,26 @@
                   'id' => 'nav',
                   'items'=>array(
                      array('label'=>'Home', 'url'=>array('/site/index')),
-                     array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
+                    // array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
                       array('label'=>'Find Jobs', 'url'=>array('JobPosting/joblist')),
-                     array('label'=>'Contact', 'url'=>array('/site/contact')),
-                     array('label'=>'Demonstrations', 'items'=>array(
-                                                                        array('label' => 'Upload File', 'url' => array('/site/upload')),
-                                                                        array('label' => 'Image gallery', 'url' => array('/site/gallery')),
-                                                                        array('label' => 'Site statistics', 'url' => array('/site/stat')),
-                                                                        array('label' => 'TinyMCE', 'url' => array('/site/tinymce')),
+                     
+                     array('label'=>'Job Seekers', 'items'=>array(
+                                                                        array('label' => 'Upload CV', 'url' => array('/site/upload')),
+                                                                        array('label' => 'CV Archive', 'url' => array('/site/gallery')),
+                                                                        //array('label' => 'Site statistics', 'url' => array('/site/stat')),
+                                                                        //array('label' => 'TinyMCE', 'url' => array('/site/tinymce')),
                                                                      ),'visible'=>!Yii::app()->user->isGuest ),
-                     array('label'=>'Login', 'url'=>array('/user/login'), 'visible'=>Yii::app()->user->isGuest),
-                     array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
+                     
                      array('label'=>'Sign Up', 'url'=>array('/user/registration'), 'items'=>array(
                                                                         array('label' => 'Job Seeker', 'url' => array('/site/addjs')),
                                                                         array('label' => 'Company Registartion', 'url' => array('/user/addcompany')),
                                                                         
                                                                      )),
+                      array('label'=>'Contact Us', 'url'=>array('/site/contact')),
+                      array('label'=>'Company List', 'url'=>array('company/index'), 'visible'=>Yii::app()->user->isGuest),
+                    array('label'=>'Login', 'url'=>array('/user/login'), 'visible'=>Yii::app()->user->isGuest),
+                    
+                      array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
                     
                       
                       

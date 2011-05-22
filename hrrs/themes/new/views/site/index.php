@@ -80,7 +80,7 @@
 ?>
 
 <?php /* notice the menu array structure passed to the blockWithSidebar, the index values should match the id's of the content div's */?>
-<?php $this->beginContent('/layouts/blockWithSidebar', array('head' => 'a block with a side menu', 'menu' => array('firstDivID' => 'What we do ', 'secondDivID' => 'Our Expertise', 'thirdDivID' => 'Why Choose Us ?'))); ?>
+<?php $this->beginContent('/layouts/blockWithSidebar', array('head' => 'Our Services', 'menu' => array('firstDivID' => 'What we do ', 'secondDivID' => 'Our Expertise', 'thirdDivID' => 'Why Choose Us ?'))); ?>
 
 <div class="sidebar_content" id="firstDivID">
   <h2>What we do ?</h2>
