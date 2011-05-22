@@ -89,7 +89,7 @@ class RegistrationController extends Controller
 		if($usertype=='company')
          return $this->createUrl('/company/create');
       elseif($usertype=='applicant')
-         return $this->createUrl('/applicant/create');
+         return $this->createUrl('/jsInfo/create');
       else
          return '';//$this->createUrl('/company/home');
    }

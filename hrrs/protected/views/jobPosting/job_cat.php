@@ -2,6 +2,6 @@
 
 <ul>
 <?php foreach ($model as $mod): ?>
-       <li><?php echo CHtml::link($mod->name,array('/jobposting2/update', 'id'=>$model->id)); ?></li>   
+       <li><?php echo CHtml::link($mod->name,array('/jobposting/joblist', 'id'=>$mod->id)); ?></li>   
 <?php endforeach; ?>    
 </ul>

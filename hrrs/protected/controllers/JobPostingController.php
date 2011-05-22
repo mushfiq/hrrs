@@ -44,6 +44,40 @@ class JobPostingController extends Controller
 			'model'=>$this->loadModel(),'posting2'=>$posting2,
 		));
 	}
+    
+    public function actionJobCat()
+    {   
+        $model = Category::model()->findAll();      
+        $this->render('job_cat',array('model'=>$model));       
+    }
+
+	public function actionJobList($id)
+	{
+/*		$model=new JobPosting('search');
+		$model->unsetAttributes();  // clear any default values
+		if(isset($_GET['JobPosting']))
+			$model->attributes=$_GET['JobPosting'];
+
+		$this->render('job_list',array(
+			'model'=>$model,
+		));*/
+        
+        
+         $dataProvider=new CActiveDataProvider('JobPosting', array(
+            'criteria'=>array(
+                'condition'=>'category=1',
+            ),
+            'pagination'=>array(
+                'pageSize'=>20,
+            ),
+        ));       
+        
+        //$model = JobPosting::model()->findAll('category=?',array($id));
+        $category =  Category::model()->findByPk($id);
+        
+        $this->render('job_list',array('dataProvider'=>$dataProvider,'cat_name'=>$category->name));
+        
+	}    
 	
 	public function actionIndex()
 	{
@@ -124,31 +158,7 @@ class JobPostingController extends Controller
 			'model'=>$model,
 		));
 	}
-    
-    public function actionJobCat()
-    {   
-        $model = Category::model()->findAll();      
-        $this->render('job_cat',array('model'=>$model));       
-    }
-
-	public function actionJobList($id)
-	{
-/*		$model=new JobPosting('search');
-		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['JobPosting']))
-			$model->attributes=$_GET['JobPosting'];
-
-		$this->render('job_list',array(
-			'model'=>$model,
-		));*/
-        
-        $model = JobPosting::model()->findAll('category=?',array($id));
-        $category =  Category::find('category=?',array($id));
-        
-        $this->render('job_list',array('model'=>$model,'cat_name'=>$category->name));
-        
-	}
-	
+   	
 	
 	public function loadModel()
 	{

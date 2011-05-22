@@ -36,7 +36,7 @@
                      array('label'=>'Home', 'url'=>array('/site/index')),
 
                      array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-                      array('label'=>'Find Jobs', 'url'=>array('JobPosting/joblist')),
+                      array('label'=>'Find Jobs', 'url'=>array('JobPosting/jobcat')),
                      array('label'=>'Contact', 'url'=>array('/site/contact')),
                      array('label'=>'Demonstrations', 'items'=>array(
                                                                         array('label' => 'Upload File', 'url' => array('/site/upload')),
