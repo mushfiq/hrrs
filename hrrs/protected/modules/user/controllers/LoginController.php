@@ -41,13 +41,13 @@ class LoginController extends Controller
 	}
    
    private function checkUserType() {
-		$user = User::model()->notsafe()->findByPk(Yii::app()->user->id);
-		if($user->usertype=='company')
-         return $this->createUrl('/company/home');
-      elseif($user->usertype=='applicant')
-         return $this->createUrl('/jsInfo/home');
-      else
-         return '';//'$this->createUrl('/company/home');
+        $usertype = UserType::getUserType(Yii::app()->user->id);        
+       	if($usertype == 'company')
+            return $this->createUrl('/company/home');
+        elseif($usertype == 'applicant')
+            return $this->createUrl('/jsInfo/home');
+        else
+            return Yii::app()->controller->module->returnUrl;
    }
 
 }

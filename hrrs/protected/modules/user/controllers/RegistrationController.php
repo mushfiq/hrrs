@@ -49,11 +49,13 @@ class RegistrationController extends Controller
 						$model->lastvisit=((Yii::app()->controller->module->loginNotActiv||(Yii::app()->controller->module->activeAfterRegister&&Yii::app()->controller->module->sendActivationMail==false))&&Yii::app()->controller->module->autoLogin)?time():0;
 						$model->superuser=0;
 						$model->status=((Yii::app()->controller->module->activeAfterRegister)?User::STATUS_ACTIVE:User::STATUS_NOACTIVE);
-                  $model->usertype = $_POST['usertype'];
-						
+                        
+                        $usertype = $_POST['usertype'];
+                        						
 						if ($model->save()) {
 							$profile->user_id=$model->id;
 							$profile->save();
+                            $this->addUserType($model->id, $usertype);
 							if (Yii::app()->controller->module->sendActivationMail) {
 								$activation_url = $this->createAbsoluteUrl('/user/activation/activation',array("activkey" => $model->activkey, "email" => $model->email));
 								UserModule::sendMail($model->email,UserModule::t("You registered from {site_name}",array('{site_name}'=>Yii::app()->name)),UserModule::t("Please activate you account go to {activation_url}",array('{activation_url}'=>$activation_url)));
@@ -65,7 +67,7 @@ class RegistrationController extends Controller
 									Yii::app()->user->login($identity,0);
 									//$this->redirect(Yii::app()->controller->module->returnUrl);
                            //for redirectring create page
-                           $this->redirect($this->createPage($_POST['usertype']));   
+                           $this->redirect($this->createPage($usertype));   
 							} else {
 								if (!Yii::app()->controller->module->activeAfterRegister&&!Yii::app()->controller->module->sendActivationMail) {
 									Yii::app()->user->setFlash('registration',UserModule::t("Thank you for your registration. Contact Admin to activate your account."));
@@ -92,6 +94,14 @@ class RegistrationController extends Controller
          return $this->createUrl('/jsInfo/create');
       else
          return '';//$this->createUrl('/company/home');
+   }
+   
+   private function addUserType($id, $usertype)
+   {
+        $userType =new UserType;
+        $userType->id = $id;
+        $userType->usertype = $usertype;
+        $userType->save();
    }
    
 }
