@@ -16,8 +16,8 @@
          
          <p>You may change the content of this page by modifying the following two files:</p>
          <ul>
-            <li>View file: <tt><?php echo __FILE__; ?></tt></li>
-            <li>Layout file: <tt><?php echo $this->getLayoutFile('main'); ?></tt></li>
+            <li></li>
+            <li></li>
          </ul>
          
          <p>For more details on how to further develop this application, please read
@@ -47,18 +47,17 @@
 
 <?php $this->beginContent('/layouts/block', array('head' => 'Welcome to <i>'.CHtml::encode(Yii::app()->name).'</i>')); ?>
 
-<p>Congratulations! You have successfully created your Yii application.</p>
-
-<p>You may change the content of this page by modifying the following two files:</p>
+<p>Efficient,effective & versatile </p>
 <ul>
-  <li>View file: <tt><?php echo __FILE__; ?></tt></li>
-  <li>Layout file: <tt><?php echo $this->getLayoutFile('main'); ?></tt></li>
+<li>We are bringing new era in human resource recruitment system.</li>
+<li>Providing thousands of jobs for the potential job seekers.</li><li>Automatic CV sorting,profile managment is our power. </li>
+
+
+
+  <li>CV uploading</li>
+  <li>Automatic Email Notification</li>
 </ul>
 
-<p>For more details on how to further develop this application, please read
-the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>
 
 <?php $this->endContent(); ?>
 
@@ -81,24 +80,26 @@ should you have any questions.</p>
 ?>
 
 <?php /* notice the menu array structure passed to the blockWithSidebar, the index values should match the id's of the content div's */?>
-<?php $this->beginContent('/layouts/blockWithSidebar', array('head' => 'a block with a side menu', 'menu' => array('firstDivID' => 'first option label', 'secondDivID' => 'second option label', 'thirdDivID' => 'third option label'), 'sidebarContent' => 'some text in the sidebar')); ?>
+<?php $this->beginContent('/layouts/blockWithSidebar', array('head' => 'a block with a side menu', 'menu' => array('firstDivID' => 'What we do ', 'secondDivID' => 'Our Expertise', 'thirdDivID' => 'Why Choose Us ?'))); ?>
 
 <div class="sidebar_content" id="firstDivID">
-  <h2>tab 1</h2>
+  <h2>What we do ?</h2>
   
-  <p>lorem ipsum...</p>                                                                                                                                                              
+  <p>Providing a complete platform for both the prospective job emplyer and job seekers.For better possibilty of finding skilled employee.We provide all type of service for the comanies.
+Register Company </p>                                                                                                                                                              
   
 </div>
 <div class="sidebar_content" id="secondDivID">
-  <h2>tab 2</h2>
+  <h2>Our Expertise</h2>
   
-  <p>lorem ipsum...</p>
+  <p>Corporate recruitment handling.Job Interview tips.Online resume generation service.Different category wise job searching.User friendly service.</p>
   
 </div>
 <div class="sidebar_content" id="thirdDivID">
-  <h2>tab 3</h2>
+  <h2>Why Choose Us ?</h2>
   
-  <p>lorem ipsum...</p>
+  <p>We are fast,never compromise with the quality.Customer satisfaction is the main goal.We try to provide best navigation for the job seekers.
+<a href="user/addjs">Job Seeker Registration</a> </p>
   
 </div>
 

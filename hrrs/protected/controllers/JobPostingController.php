@@ -17,7 +17,7 @@ class JobPostingController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','create','update','admin','show','delete','JobList'),
+				'actions'=>array('index','view','create','update','admin','show','delete','JobList','jobcat'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -25,7 +25,7 @@ class JobPostingController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin','delete','jobcat'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -124,17 +124,29 @@ class JobPostingController extends Controller
 			'model'=>$model,
 		));
 	}
+    
+    public function actionJobCat()
+    {   
+        $model = Category::model()->findAll();      
+        $this->render('job_cat',array('model'=>$model));       
+    }
 
-	public function actionJobList()
+	public function actionJobList($id)
 	{
-		$model=new JobPosting('search');
+/*		$model=new JobPosting('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['JobPosting']))
 			$model->attributes=$_GET['JobPosting'];
 
 		$this->render('job_list',array(
 			'model'=>$model,
-		));
+		));*/
+        
+        $model = JobPosting::model()->findAll('category=?',array($id));
+        $category =  Category::find('category=?',array($id));
+        
+        $this->render('job_list',array('model'=>$model,'cat_name'=>$category->name));
+        
 	}
 	
 	

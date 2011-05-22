@@ -23,9 +23,9 @@ $this->menu=array(
 		'com_info',
 		'com_address',
 		'com_contact_no',
-		'com_mail',
 		'com_web',
 		'com_logo',
 		'create_time',
+		'com_user_id',
 	),
 )); ?>

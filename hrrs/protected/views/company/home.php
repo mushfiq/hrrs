@@ -1,9 +1,1 @@
-<h1>Companys</h1>
-
-
-<?php
-
-include"menu.php";
-?>
-
-<br /><br /><br /><br />
+<?php echo CHtml::link('New Job Posting', array('/jobposting/create')); ?>

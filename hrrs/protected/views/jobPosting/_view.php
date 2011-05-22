@@ -6,7 +6,7 @@
         <br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('com_user_id')); ?>:</b>
-	<?php echo CHtml::encode(User::full_name($data->com_user_id)); ?>	
+	<?php //echo CHtml::encode(User::full_name($data->com_user_id)); ?>	
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('deadline')); ?>:</b>

@@ -10,6 +10,12 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'com_name'); ?>
+		<?php echo $form->textField($model,'com_name',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo $form->error($model,'com_name'); ?>
+	</div>   
+   
+	<div class="row">
 		<?php echo $form->labelEx($model,'com_type'); ?>
 		<?php echo $form->textField($model,'com_type',array('size'=>50,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'com_type'); ?>
@@ -33,7 +39,6 @@
 		<?php echo $form->error($model,'com_contact_no'); ?>
 	</div>
 
-
 	<div class="row">
 		<?php echo $form->labelEx($model,'com_web'); ?>
 		<?php echo $form->textField($model,'com_web',array('size'=>50,'maxlength'=>50)); ?>
@@ -41,9 +46,9 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'com_logo'); ?>
-		<?php echo $form->textField($model,'com_logo',array('size'=>50,'maxlength'=>50)); ?>
-		<?php echo $form->error($model,'com_logo'); ?>
+		<?php //echo $form->labelEx($model,'com_logo'); ?>
+		<?php //echo $form->textField($model,'com_logo'); ?>
+		<?php //echo $form->error($model,'com_logo'); ?>
 	</div>
 
 	<div class="row buttons">

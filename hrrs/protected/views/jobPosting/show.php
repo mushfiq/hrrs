@@ -4,9 +4,9 @@
 
 echo "<center><h2>Post Name: $model->title</h2></center>";
 
-if (Yii::app()->user->getState('role')=='company'){?>
- <?php echo $model->title ?> (<a href="../update/<?php print $model->id ?>">Edit this Post</a>)</h2>
-<?php }
+//if (Yii::app()->user->getState('role')=='company'){
+    echo CHtml::link('Edit',array('/jobposting/update', 'id'=>$model->id)); 
+//}
 
 $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
@@ -29,6 +29,8 @@ $this->widget('zii.widgets.CDetailView', array(
 if (Yii::app()->user->getState('role')=='company'){?>
 <h2>Aditional Information (<a href="../../jobposting2/update/<?php print $model->id ?>">edit</a>)</h2>
 <?php }
+echo CHtml::link('Edit',array('/jobposting2/update', 'id'=>$model->id));
+
 
  $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$posting2,

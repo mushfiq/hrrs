@@ -1,13 +1,18 @@
 <?php
 $this->breadcrumbs=array(
-	'My Company'=>array('home'),
-	'company Details'=>array('show_details'),	
+	'Companys'=>array('index'),
+	$model->com_id=>array('view','id'=>$model->com_id),
 	'Update',
 );
 
-include"menu.php";
+$this->menu=array(
+	array('label'=>'List Company', 'url'=>array('index')),
+	array('label'=>'Create Company', 'url'=>array('create')),
+	array('label'=>'View Company', 'url'=>array('view', 'id'=>$model->com_id)),
+	array('label'=>'Manage Company', 'url'=>array('admin')),
+);
 ?>
 
-<h1>Update Company Details</h1>
+<h1>Update Company <?php echo $model->com_id; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

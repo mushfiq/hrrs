@@ -30,7 +30,6 @@
 		<?php echo $form->textField($model,'com_contact_no',array('size'=>30,'maxlength'=>30)); ?>
 	</div>
 
-
 	<div class="row">
 		<?php echo $form->label($model,'com_web'); ?>
 		<?php echo $form->textField($model,'com_web',array('size'=>50,'maxlength'=>50)); ?>
@@ -38,12 +37,17 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'com_logo'); ?>
-		<?php echo $form->textField($model,'com_logo',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo $form->textField($model,'com_logo'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'create_time'); ?>
 		<?php echo $form->textField($model,'create_time'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'com_user_id'); ?>
+		<?php echo $form->textField($model,'com_user_id'); ?>
 	</div>
 
 	<div class="row buttons">

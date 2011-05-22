@@ -35,6 +35,7 @@
                   'items'=>array(
                      array('label'=>'Home', 'url'=>array('/site/index')),
                      array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
+                      array('label'=>'Find Jobs', 'url'=>array('JobPosting/joblist')),
                      array('label'=>'Contact', 'url'=>array('/site/contact')),
                      array('label'=>'Demonstrations', 'items'=>array(
                                                                         array('label' => 'Upload File', 'url' => array('/site/upload')),
@@ -42,9 +43,16 @@
                                                                         array('label' => 'Site statistics', 'url' => array('/site/stat')),
                                                                         array('label' => 'TinyMCE', 'url' => array('/site/tinymce')),
                                                                      ),'visible'=>!Yii::app()->user->isGuest ),
-                     array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+                     array('label'=>'Login', 'url'=>array('/user/login'), 'visible'=>Yii::app()->user->isGuest),
                      array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
-                     array('label'=>'Register', 'url'=>array('/site/signup'), 'visible'=>Yii::app()->user->isGuest),
+                     array('label'=>'Sign Up', 'url'=>array('/user/registration'), 'items'=>array(
+                                                                        array('label' => 'Job Seeker', 'url' => array('/site/addjs')),
+                                                                        array('label' => 'Company Registartion', 'url' => array('/user/addcompany')),
+                                                                        
+                                                                     )),
+                    
+                      
+                      
                   ),
                )); ?>
             </div><!-- mainmenu -->

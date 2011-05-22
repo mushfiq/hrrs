@@ -7,8 +7,8 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>' ',
-
+	'name'=>'Human Resource Recruitment System',
+   'theme'=>'new',
 	// preloading 'log' component
 	'preload'=>array('log'),
 
@@ -22,7 +22,7 @@ return array(
 
 
 	  //adding new theme
-    'theme'=>'new',
+    //'theme'=>'adminus',
 	
 	'modules'=>array(
 		'gii'=>array(
@@ -58,7 +58,7 @@ return array(
 		),
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=hrrs_old',
+			'connectionString' => 'mysql:host=localhost;dbname=hrrs',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',
