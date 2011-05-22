@@ -3830,6 +3830,7 @@ Stack trace:
 #1 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
 #2 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
 #3 {main} REQUEST_URI=/hrrs/hrrs/user/images/closelabel.gif
+<<<<<<< HEAD
 >>>>>>> 6f168c76b8a208f6abe2c21ab1e276bd24418896
 2011/05/22 18:31:44 [error] [exception.CException] exception 'CException' with message 'Property "User.usertype" is not defined.' in C:\xampp\htdocs\hrrs\framework\base\CComponent.php:131
 Stack trace:
@@ -3916,4 +3917,21 @@ Stack trace:
 #2 C:\xampp\htdocs\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/css/wysiwy...')
 #3 C:\xampp\htdocs\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
 #4 C:\xampp\htdocs\hrrs\hrrs\index.php(13): CApplication->run()
+=======
+2011/05/22 17:48:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gallery".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('gallery')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('gallery')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/gallery')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/hrrs/hrrs/site/gallery
+2011/05/22 17:49:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\wamp\www\hrrs\framework\web\CController.php:477
+Stack trace:
+#0 C:\wamp\www\hrrs\framework\web\CController.php(262): CController->missingAction('css')
+#1 C:\wamp\www\hrrs\framework\web\CWebApplication.php(328): CController->run('css')
+#2 C:\wamp\www\hrrs\framework\web\CWebApplication.php(121): CWebApplication->runController('site/css/wysiwy...')
+#3 C:\wamp\www\hrrs\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#4 C:\wamp\www\hrrs\hrrs\index.php(13): CApplication->run()
+>>>>>>> 7f8422e3ccf2a617ebf82983f4f66412e492cc1d
 #5 {main} REQUEST_URI=/hrrs/hrrs/site/css/wysiwyg.css
